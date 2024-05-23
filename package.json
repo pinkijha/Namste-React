@@ -2,7 +2,6 @@
   "name": "y",
   "version": "1.0.0",
   "description": "This is namaste react",
-  
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
@@ -22,8 +21,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 chrome version"
   ]
-
 }

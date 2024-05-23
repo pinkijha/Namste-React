@@ -1,12 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+const para = (
+    <p>Write here paragraph..</p>
+);
 
+
+const JsxHeading = () => (
+<h1 id="heading">Namste React in JSX</h1>
+);
+
+const number = 1000;
+    // Functional Components -- New Way
+        const HeadingComponent = () =>( 
+            <div id="container">
+                {number}
+                <JsxHeading />
+                <JsxHeading></JsxHeading>
+                {JsxHeading()}
+        <h1> Namste Functional Components </h1>
+                {para}
+            </div>
+    );
+       
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<HeadingComponent />)
+// root.render(jsxHeading)
 
-// JSX is not HTML in JS, its look like HTML & XML
-// JSX ==> ReactElement ==> ReactElement-object(JS) ==> html element (render)
-const name = React;
-const jsxHeading = <h1 id="heading">Namste React in JSX</h1>
-root.render(jsxHeading)
+// React Component
+    // Class Based Components -- OLD Way

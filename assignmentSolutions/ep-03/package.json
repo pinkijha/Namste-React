@@ -1,0 +1,23 @@
+{
+  "name": "ep-03",
+  "version": "1.0.0",
+  "description": "Assignment-03",
+  "main": "app.js",
+  "scripts": {
+    "start":"parcel index.html",
+    "build": "build parcel index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "ep-03"
+  ],
+  "author": "pinki",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

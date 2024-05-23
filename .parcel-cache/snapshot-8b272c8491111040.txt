@@ -1,4 +1,4 @@
-5995
+6003
 81D:\Pinki's_Learning\Namste-React\node_modules\htmlnano\lib\modules\minifyUrls.cjs133607888448038937 0
 48D:\Pinki's_Learning\Namste-React\dist\index.html133609262465114173 0
 50D:\Pinki's_Learning\Namste-React\node_modules\csso133607888463177927 1
@@ -14,7 +14,7 @@
 78D:\Pinki's_Learning\Namste-React\node_modules\@swc\helpers\scripts\ast_grep.js133607888469466375 0
 85D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\features\gyroscope.js133607888477688152 0
 82D:\Pinki's_Learning\Namste-React\node_modules\@swc\helpers\esm\_super_prop_base.js133607888468765800 0
-39D:\Pinki's_Learning\Namste-React\app.js133609362425484684 0
+39D:\Pinki's_Learning\Namste-React\app.js133609677936248839 0
 79D:\Pinki's_Learning\Namste-React\node_modules\htmlparser2\lib\WritableStream.js133607888439587582 0
 64D:\Pinki's_Learning\Namste-React\node_modules\utility-types\dist133607888446208675 1
 58D:\Pinki's_Learning\Namste-React\node_modules\lmdb\open.js133607888467410459 0
@@ -34,11 +34,11 @@
 89D:\Pinki's_Learning\Namste-React\node_modules\@parcel\reporter-cli\lib\CLIReporter.js.map133607888490199336 0
 63D:\Pinki's_Learning\Namste-React\node_modules\@msgpackr-extract133608510811490414 1
 86D:\Pinki's_Learning\Namste-React\node_modules\lmdb\dependencies\v8\v8-fast-api-calls.h133607888466577719 0
-37D:\Pinki's_Learning\Namste-React\dist133609362426500294 1
+37D:\Pinki's_Learning\Namste-React\dist133609677945378488 1
 70D:\Pinki's_Learning\Namste-React\node_modules\postcss-value-parser\lib133607888440646080 1
 47D:\Pinki's_Learning\Namste-React\Notes\EP-1.pdf133606943430186510 0
 73D:\Pinki's_Learning\Namste-React\node_modules\css-tree\lib\utils\clone.js133607888467331785 0
-44D:\Pinki's_Learning\Namste-React\assignments133608686268702666 1
+44D:\Pinki's_Learning\Namste-React\assignments133609653029420629 1
 81D:\Pinki's_Learning\Namste-React\node_modules\css-tree\lib\lexer\generic-const.js133607888469168091 0
 54D:\Pinki's_Learning\Namste-React\node_modules\entities133607888446538796 1
 63D:\Pinki's_Learning\Namste-React\node_modules\process\.eslintrc133608510811470346 0
@@ -46,7 +46,7 @@
 73D:\Pinki's_Learning\Namste-React\node_modules\htmlnano\docs\versions.json133607888457016780 0
 42D:\Pinki's_Learning\Namste-React\index.css133609264218828641 0
 91D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\features\media-fragments.js133607888482021306 0
-53D:\Pinki's_Learning\Namste-React\node_modules\@parcel133608510811490414 1
+53D:\Pinki's_Learning\Namste-React\node_modules\@parcel133609687116765166 1
 77D:\Pinki's_Learning\Namste-React\node_modules\css-tree\lib\syntax\node\CDO.js133607888467059590 0
 50D:\Pinki's_Learning\Namste-React\node_modules\.bin133608497106513169 1
 91D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\lib\svgMappings.js133607888482715704 0
@@ -63,7 +63,7 @@
 75D:\Pinki's_Learning\Namste-React\node_modules\@parcel\profiler\src\index.js133607888453100066 0
 59D:\Pinki's_Learning\Namste-React\node_modules\node-releases133607888438919958 1
 125D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\definition-syntax\tokenizer.js133607888465585389 0
-64D:\Pinki's_Learning\Namste-React\node_modules\.package-lock.json133608510815975945 0
+64D:\Pinki's_Learning\Namste-React\node_modules\.package-lock.json133609687119045095 0
 121D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\utils\createCustomError.js133607888450316430 0
 91D:\Pinki's_Learning\Namste-React\node_modules\@parcel\runtime-js\src\helpers\.eslintrc.json133607888475500804 0
 112D:\Pinki's_Learning\Namste-React\node_modules\csso\node_modules\css-tree\cjs\tokenizer\char-code-definitions.cjs133607888486130021 0
@@ -71,7 +71,7 @@
 71D:\Pinki's_Learning\Namste-React\node_modules\@parcel\watcher\README.md133607888450944384 0
 78D:\Pinki's_Learning\Namste-React\node_modules\lines-and-columns\build\index.js133607888435589741 0
 95D:\Pinki's_Learning\Namste-React\node_modules\csso\node_modules\css-tree\lib\syntax\node\Url.js133607888498724079 0
-45D:\Pinki's_Learning\Namste-React\node_modules133608510811490414 1
+45D:\Pinki's_Learning\Namste-React\node_modules133609687116746519 1
 71D:\Pinki's_Learning\Namste-React\node_modules\@swc\helpers\src\_jsx.mjs133607888478897674 0
 102D:\Pinki's_Learning\Namste-React\node_modules\dom-serializer\node_modules\entities\lib\encode.d.ts.map133607888443428086 0
 84D:\Pinki's_Learning\Namste-React\node_modules\@parcel\packager-js\src\dev-prelude.js133607888474879656 0
@@ -84,11 +84,11 @@
 65D:\Pinki's_Learning\Namste-React\node_modules\react-error-overlay133607888442938985 1
 99D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\usage.js133607888454669683 0
 70D:\Pinki's_Learning\Namste-React\node_modules\domutils\lib\querying.js133607888439890230 0
-38D:\Pinki's_Learning\Namste-React\Notes133608686638939188 1
+38D:\Pinki's_Learning\Namste-React\Notes133609545157414479 1
 71D:\Pinki's_Learning\Namste-React\node_modules\htmlnano\lib\htmlnano.mjs133607888462204267 0
 76D:\Pinki's_Learning\Namste-React\node_modules\svgo\plugins\preset-default.js133607888459135096 0
 63D:\Pinki's_Learning\Namste-React\node_modules\source-map-js\lib133607888443020425 1
-50D:\Pinki's_Learning\Namste-React\package-lock.json133608510814393173 0
+50D:\Pinki's_Learning\Namste-React\package-lock.json133609687117879487 0
 107D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\package.json133607888466435701 0
 77D:\Pinki's_Learning\Namste-React\node_modules\css-tree\lib\parser\sequence.js133607888471604116 0
 96D:\Pinki's_Learning\Namste-React\node_modules\@parcel\core\test\PublicMutableBundleGraph.test.js133607888497566338 0
@@ -97,7 +97,7 @@
 90D:\Pinki's_Learning\Namste-React\node_modules\@parcel\transformer-html\src\dependencies.js133607888467351907 0
 63D:\Pinki's_Learning\Namste-React\node_modules\lmdb\util\when.js133607888467557768 0
 70D:\Pinki's_Learning\Namste-React\node_modules\json5\lib\stringify.d.ts133607888446016820 0
-45D:\Pinki's_Learning\Namste-React\package.json133609221542837536 0
+45D:\Pinki's_Learning\Namste-React\package.json133609687116839711 0
 85D:\Pinki's_Learning\Namste-React\node_modules\@swc\helpers\cjs\_apply_decs_2203_r.cjs133607888444388667 0
 75D:\Pinki's_Learning\Namste-React\node_modules\css-tree\lib\lexer\generic.js133607888469266170 0
 84D:\Pinki's_Learning\Namste-React\node_modules\css-tree\lib\syntax\node\Percentage.js133607888471245347 0
@@ -1398,6 +1398,7 @@
 81D:\Pinki's_Learning\Namste-React\node_modules\lmdb\dependencies\lz4\lib\lz4file.h133607888465909206 0
 77D:\Pinki's_Learning\Namste-React\node_modules\semver\ranges\max-satisfying.js133607888450796305 0
 66D:\Pinki's_Learning\Namste-React\node_modules\posthtml-parser\dist133607888441646889 1
+68D:\Pinki's_Learning\Namste-React\assignmentSolutions\ep-03\style.css133609661709506396 0
 74D:\Pinki's_Learning\Namste-React\node_modules\semver\ranges\min-version.js133607888451257410 0
 77D:\Pinki's_Learning\Namste-React\node_modules\semver\ranges\to-comparators.js133607888455541077 0
 99D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\features\registerprotocolhandler.js133607888489420781 0
@@ -1446,6 +1447,7 @@
 78D:\Pinki's_Learning\Namste-React\node_modules\@swc\helpers\_\_class_call_check133607888470949504 1
 76D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\lib133607888482682586 1
 108D:\Pinki's_Learning\Namste-React\node_modules\@swc\helpers\_\_class_check_private_static_access\package.json133607888471013976 0
+52D:\Pinki's_Learning\Namste-React\assignmentSolutions133609663188327567 1
 113D:\Pinki's_Learning\Namste-React\node_modules\@parcel\core\test\fixtures\targets-default-distdir-two\package.json133607888500514982 0
 84D:\Pinki's_Learning\Namste-React\node_modules\csso\cjs\restructure\1-mergeAtrule.cjs133607888435764802 0
 63D:\Pinki's_Learning\Namste-React\node_modules\react-refresh\cjs133607888440939219 1
@@ -3600,6 +3602,7 @@
 103D:\Pinki's_Learning\Namste-React\node_modules\css-select\node_modules\domutils\lib\esm\stringify.js.map133607888453743327 0
 101D:\Pinki's_Learning\Namste-React\node_modules\css-select\node_modules\domutils\lib\esm\traversal.d.ts133607888458296716 0
 77D:\Pinki's_Learning\Namste-React\node_modules\@swc\helpers\_\_async_generator133607888470105823 1
+65D:\Pinki's_Learning\Namste-React\assignmentSolutions\ep-03\app.js133609678301153475 0
 99D:\Pinki's_Learning\Namste-React\node_modules\css-select\node_modules\domutils\lib\esm\traversal.js133607888444963320 0
 77D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\regions\ER.js133607888474485820 0
 88D:\Pinki's_Learning\Namste-React\node_modules\css-select\node_modules\domhandler\LICENSE133607888434577374 0
@@ -4282,7 +4285,7 @@
 83D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\features\imports.js133607888478840434 0
 69D:\Pinki's_Learning\Namste-React\node_modules\@parcel\reporter-tracer133607888485690476 1
 85D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\features\indexeddb.js133607888478957799 0
-60D:\Pinki's_Learning\Namste-React\dist\index.9e4c6fd2.css.map133609325506856220 0
+60D:\Pinki's_Learning\Namste-React\dist\index.9e4c6fd2.css.map133609677943897574 0
 86D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\features\indexeddb2.js133607888478968103 0
 88D:\Pinki's_Learning\Namste-React\node_modules\caniuse-lite\data\features\inline-block.js133607888478968103 0
 80D:\Pinki's_Learning\Namste-React\node_modules\@parcel\core\lib\Transformation.js133607888499058079 0
@@ -5685,6 +5688,7 @@
 117D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\compile.d.ts.map133607888493210709 0
 111D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\compile.js133607888492305345 0
 111D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\index.d.ts133607888494028756 0
+58D:\Pinki's_Learning\Namste-React\assignmentSolutions\ep-03133609662721304041 1
 109D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\index.js133607888492588475 0
 115D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\procedure.d.ts133607888494099298 0
 119D:\Pinki's_Learning\Namste-React\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\procedure.d.ts.map133607888493513241 0
@@ -5961,7 +5965,7 @@
 102D:\Pinki's_Learning\Namste-React\node_modules\@babel\helper-validator-identifier\lib\identifier.js.map133607888437676936 0
 93D:\Pinki's_Learning\Namste-React\node_modules\@babel\helper-validator-identifier\lib\index.js133607888438429248 0
 95D:\Pinki's_Learning\Namste-React\node_modules\@babel\helper-validator-identifier\lib\keyword.js133607888439899402 0
-56D:\Pinki's_Learning\Namste-React\dist\index.9e4c6fd2.css133609325506771950 0
+56D:\Pinki's_Learning\Namste-React\dist\index.9e4c6fd2.css133609677943864579 0
 67D:\Pinki's_Learning\Namste-React\node_modules\@babel\code-frame\lib133607888437280440 1
 71D:\Pinki's_Learning\Namste-React\node_modules\@babel\code-frame\LICENSE133607888434350603 0
 76D:\Pinki's_Learning\Namste-React\node_modules\@babel\code-frame\package.json133607888438429248 0
@@ -5992,5 +5996,9 @@
 60D:\Pinki's_Learning\Namste-React\dist\index.3da2ba9a.css.map133609227914585513 0
 55D:\Pinki's_Learning\Namste-React\dist\index.b8ed06f2.js133609227914460346 0
 77D:\Pinki's_Learning\Namste-React\assignments\Chapter+02-+Igniting+our+App.pdf133608686183276401 0
-55D:\Pinki's_Learning\Namste-React\dist\index.5baa4167.js133609362426500294 0
-59D:\Pinki's_Learning\Namste-React\dist\index.5baa4167.js.map133609362426500294 0
+47D:\Pinki's_Learning\Namste-React\Notes\EP-3.pdf133609545168393890 0
+83D:\Pinki's_Learning\Namste-React\assignments\Chapter+03+-+Laying+the+Foundation.pdf133609653044933981 0
+69D:\Pinki's_Learning\Namste-React\assignmentSolutions\ep-03\index.html133609682019758005 0
+58D:\Pinki's_Learning\Namste-React\assignmentSolutions\ep-04133609663188327567 1
+55D:\Pinki's_Learning\Namste-React\dist\index.5baa4167.js133609677945166286 0
+59D:\Pinki's_Learning\Namste-React\dist\index.5baa4167.js.map133609677945346474 0
