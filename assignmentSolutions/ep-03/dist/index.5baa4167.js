@@ -2957,6 +2957,10 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _logoPng = require("./images/logo.png");
+var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
+var _userPng = require("./images/user.png");
+var _userPngDefault = parcelHelpers.interopDefault(_userPng);
 //using React.createElement
 const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
     className: "title"
@@ -2971,7 +2975,7 @@ const heading1 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: "heading-1 JSX"
         }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 17,
+            lineNumber: 19,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -2979,7 +2983,7 @@ const heading1 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: "heading-2 JSX"
         }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 18,
+            lineNumber: 20,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -2987,7 +2991,7 @@ const heading1 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             alt: "flower"
         }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 19,
+            lineNumber: 21,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -2995,13 +2999,13 @@ const heading1 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: "heading-3 JSX"
         }, void 0, false, {
             fileName: "app.js",
-            lineNumber: 20,
+            lineNumber: 22,
             columnNumber: 5
         }, undefined)
     ]
 }, void 0, true, {
     fileName: "app.js",
-    lineNumber: 16,
+    lineNumber: 18,
     columnNumber: 3
 }, undefined);
 root.render(heading1);
@@ -3010,7 +3014,7 @@ const Para = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         children: "kbvbervbqerivbhqjerv "
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 27,
+        lineNumber: 29,
         columnNumber: 3
     }, undefined);
 _c = Para;
@@ -3022,50 +3026,136 @@ const Heading2 = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "heading-1 functional component"
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 34,
+                lineNumber: 36,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Para, {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 35,
+                lineNumber: 37,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "heading-2 functional component"
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 36,
+                lineNumber: 38,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "heading-3 functional component"
             }, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 37,
+                lineNumber: 39,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 3
     }, undefined);
 _c1 = Heading2;
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading2, {}, void 0, false, {
+// Navbar || Header Component
+// search
+const Search = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "navbar",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Logo, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 47,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "example",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        placeholder: "Search..",
+                        name: "search2"
+                    }, void 0, false, {
+                        fileName: "app.js",
+                        lineNumber: 49,
+                        columnNumber: 3
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                            className: "fa fa-search"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 50,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "app.js",
+                        lineNumber: 50,
+                        columnNumber: 3
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "app.js",
+                lineNumber: 48,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(User, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 52,
+                columnNumber: 3
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 46,
+        columnNumber: 3
+    }, undefined);
+_c2 = Search;
+//logo img
+const Logo = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+        src: (0, _logoPngDefault.default),
+        id: "img1",
+        alt: "Logo"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 58,
+        columnNumber: 3
+    }, undefined);
+_c3 = Logo;
+// user img
+const User = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+        src: (0, _userPngDefault.default),
+        id: "img",
+        alt: "user"
+    }, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 63,
+        columnNumber: 3
+    }, undefined);
+_c4 = User;
+const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Search, {}, void 0, false, {
+        fileName: "app.js",
+        lineNumber: 67,
+        columnNumber: 5
+    }, undefined);
+_c5 = Header;
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 40,
+    lineNumber: 70,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "Para");
 $RefreshReg$(_c1, "Heading2");
+$RefreshReg$(_c2, "Search");
+$RefreshReg$(_c3, "Logo");
+$RefreshReg$(_c4, "User");
+$RefreshReg$(_c5, "Header");
 
   $parcel$ReactRefreshHelpers$6024.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"g0sI2","react-dom/client":"gaRBK","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0","react/jsx-dev-runtime":"ijxKj"}],"g0sI2":[function(require,module,exports) {
+},{"react":"g0sI2","react-dom/client":"gaRBK","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0","react/jsx-dev-runtime":"ijxKj","./images/logo.png":"4BFJA","./images/user.png":"1Fqem"}],"g0sI2":[function(require,module,exports) {
 "use strict";
 module.exports = require("85677a8d6b20ea96");
 
@@ -27476,6 +27566,47 @@ module.exports = require("82529c5081409ecb");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"e5cf2beebbc05ee2":"g0sI2"}]},["1oTUr","lRQgV","igcvL"], "igcvL", "parcelRequirecd49")
+},{"e5cf2beebbc05ee2":"g0sI2"}],"4BFJA":[function(require,module,exports) {
+module.exports = require("3c61c8c9ad500ca3").getBundleURL("1G2bZ") + "logo.d4f8fe33.png" + "?" + Date.now();
+
+},{"3c61c8c9ad500ca3":"1hMxv"}],"1hMxv":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"1Fqem":[function(require,module,exports) {
+module.exports = require("a12cfcef036f0ac9").getBundleURL("1G2bZ") + "user.1d667e53.png" + "?" + Date.now();
+
+},{"a12cfcef036f0ac9":"1hMxv"}]},["1oTUr","lRQgV","igcvL"], "igcvL", "parcelRequirecd49")
 
 //# sourceMappingURL=index.5baa4167.js.map

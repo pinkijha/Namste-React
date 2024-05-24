@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import logo from "./images/logo.png";
+import user from "./images/user.png"
 
 
 //using React.createElement
@@ -37,4 +39,32 @@ const Heading2 =() => (
     <h3>heading-3 functional component</h3>
   </div>
 )
-root.render(<Heading2 />);
+
+// Navbar || Header Component
+// search
+const Search = ()=> (
+  <div id="navbar">
+    <Logo/>
+    <span className="example">
+  <input type="text" placeholder="Search.."  name="search2"/>
+  <button type="submit"><i className="fa fa-search"></i></button>
+  </span>
+  <User/>
+  </div>
+);
+
+//logo img
+const Logo = () => (  
+  <img src={logo} id="img1"  alt="Logo"></img>
+);
+
+// user img
+const User = () => (
+  <img src={user} id="img" alt="user"></img>
+)
+
+const Header = () =>(      
+    <Search/>
+)
+
+root.render(<Header />);
