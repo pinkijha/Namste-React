@@ -1,0 +1,22 @@
+{
+  "name": "khaokhilao",
+  "version": "1.0.0",
+  "description": "Food Delivery App",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "build parcel index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "Food",
+    "Delivery",
+    "App"
+  ],
+  "author": "pinki",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

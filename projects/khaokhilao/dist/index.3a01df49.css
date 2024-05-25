@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: #fff;
+  background-color: #000;
+  justify-content: space-between;
+  height: 90px;
+  display: flex;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.nav-item {
+  margin: 35px 10px 35px 35px;
+}
+
+.nav-item ul {
+  display: flex;
+}
+
+.nav-item li {
+  margin-right: 15px;
+  font-size: 18px;
+  list-style: none;
+}
+
+.search {
+  margin-top: 35px;
+}
+
+.search input {
+  border-radius: 5px;
+  width: 400px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.search-btn {
+  border-radius: 5px;
+  width: 40px;
+  padding: 8px;
+}
+
+.top-resto {
+  margin: 15px 0 0 20px;
+  font-size: 24px;
+}
+
+.main-container {
+  margin: 20px 50px;
+}
+
+.rest-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.rest-cards {
+  border-radius: 7px;
+  width: 200px;
+  height: 300px;
+  margin: 15px 5px 0 20px;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.rest-cards:hover {
+  border: 1px solid #000;
+}
+
+.rest-img {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  padding: 1px;
+}
+
+.card-descr {
+  cursor: pointer;
+  padding: 3px 0 0 5px;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
