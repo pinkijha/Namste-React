@@ -3079,32 +3079,62 @@ const Body = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "rest-container",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
+                        imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597",
+                        name: "Chinese Wok",
+                        delTime: "4.2 \u2022 20-25 mins",
+                        description: "Chinese, Asian, Tibetan, Desserts Marathahalli"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 42,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
+                        imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7",
+                        name: "Pizza Hut",
+                        delTime: "4 \u2022 35-40 mins",
+                        description: "Pizzas Marathahalli"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 43,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
+                        imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/5/2/4c1e29e2-fecf-41b6-8b21-5a58338247fe_198493.jpg",
+                        name: "Leon's - Burgers..",
+                        delTime: "4.3 \u2022 30-35 mins",
+                        description: "American, Snacks, Continental Whitefield"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
+                        imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/tz4jybl8y0mwte9hyk3p",
+                        name: "Awadhi Delights",
+                        delTime: "3.9 \u2022 30-35 mins",
+                        description: "Biryani, North Indian, Awadhi MARATHAHALLI"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
+                        imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/bnvciteie30q0rbiaxm8",
+                        name: "EkDum Donne Biryani",
+                        delTime: "4.3 \u2022 35-40 mins",
+                        description: "Biryani Kadubeesanahalli"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 46,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
+                        imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/qyqkbiryjgqn7w9gujfx",
+                        name: "Lakeview Milk Bar",
+                        delTime: "4.2 \u2022 30-35 mins",
+                        description: "Bakery, Desserts, Ice Cream Whitefield"
+                    }, void 0, false, {
                         fileName: "App.js",
                         lineNumber: 47,
                         columnNumber: 9
@@ -3124,7 +3154,7 @@ const Body = ()=>{
 };
 _c1 = Body;
 // restro cards
-const RestaurentCard = ()=>{
+const RestaurentCard = ({ imageUrl, name, delTime, description })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "rest-cards",
         style: {
@@ -3133,20 +3163,21 @@ const RestaurentCard = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "rest-img",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597"
+                src: imageUrl,
+                alt: "rest-logo"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 57,
+                lineNumber: 59,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "card-descr",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        children: "Chinese Wok"
+                        children: name
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 62,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -3155,55 +3186,55 @@ const RestaurentCard = ()=>{
                                 class: "fa-solid fa-star"
                             }, void 0, false, {
                                 fileName: "App.js",
-                                lineNumber: 64,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                 class: "fa-solid fa-star"
                             }, void 0, false, {
                                 fileName: "App.js",
-                                lineNumber: 65,
+                                lineNumber: 67,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                 class: "fa-regular fa-star"
                             }, void 0, false, {
                                 fileName: "App.js",
-                                lineNumber: 66,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, undefined),
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                children: "4.2 \u2022 20-25 mins"
+                                children: delTime
                             }, void 0, false, {
                                 fileName: "App.js",
-                                lineNumber: 66,
+                                lineNumber: 68,
                                 columnNumber: 46
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "App.js",
-                        lineNumber: 63,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "",
-                        children: "Chinese, Asian, Tibetan, Desserts Marathahalli"
+                        children: description
                     }, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 68,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 61,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 56,
+        lineNumber: 58,
         columnNumber: 5
     }, undefined);
 };
@@ -3214,18 +3245,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 77,
+                lineNumber: 79,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 78,
+                lineNumber: 80,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 76,
+        lineNumber: 78,
         columnNumber: 5
     }, undefined);
 };
@@ -3233,7 +3264,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 84,
+    lineNumber: 86,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
