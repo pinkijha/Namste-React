@@ -87,4 +87,14 @@
   cursor: pointer;
   padding: 3px 0 0 5px;
 }
+
+.filter {
+  margin: 15px 5px 0 20px;
+  padding: 3px 0 0 5px;
+}
+
+.filter-btn {
+  cursor: pointer;
+  padding: 3px 5px;
+}
 /*# sourceMappingURL=index.3a01df49.css.map */

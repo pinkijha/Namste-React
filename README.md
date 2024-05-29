@@ -20,3 +20,35 @@
 - Tree Shaking - Remove unused code for you
 - Different dev and prod bundles
 - 
+
+
+# KhaoKhilao App
+	>> Navbar
+		- Logo on leftmost side
+		- Home
+		- About 
+		- User
+		
+	>> Content
+		- Search Bar
+		
+		- Restro Cards Container
+			- Restro Cards 
+				- Dish Name
+				 - Image
+				 - Restaurant Name
+				 - Rating
+				 - Cuisines
+				 - Time to Deliver
+
+			
+	>> Footer
+		- Logo
+		- Copywrite
+		- Social
+		- Address
+		- Contact
+        
+# React Hooks 	(Normal JS Function)
+		- useState() - SuperPowerFul State 
+		- useEffect()	

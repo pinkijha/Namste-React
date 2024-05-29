@@ -80,3 +80,11 @@
     padding: 3px 0px 0px 5px;
     cursor: pointer;
 }
+.filter{
+    margin: 15px 5px 0px 20px;  
+    padding: 3px 0px 0px 5px;
+}
+.filter-btn{
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+}

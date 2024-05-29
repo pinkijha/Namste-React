@@ -1,0 +1,27 @@
+import { CDN_LINK } from "../utils/constant";
+
+// restro cards
+const RestaurentCard = ({resData}) => {
+    const {name, avgRating, locality, areaName, costForTwo} = resData?.info;
+    return (
+      <div className="rest-cards" style={{ backgroundColor: "#f0f0f0" }}>
+        <img
+          className="rest-img"
+          src={CDN_LINK + resData.info.cloudinaryImageId} alt="rest-logo"
+        />
+        <div className="card-descr">
+          <h3>{name}</h3>
+          <span>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star"></i>
+            <i className="fa-regular fa-star"></i> <b>{avgRating} Stars</b>
+          </span>
+          <p className="">{costForTwo}</p>
+          <p className="">{locality}</p>
+          <p className="">{areaName}</p>
+        </div>
+      </div>
+    );
+  };
+
+  export default RestaurentCard;
