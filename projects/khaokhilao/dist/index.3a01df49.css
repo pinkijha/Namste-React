@@ -44,6 +44,7 @@
 }
 
 .search-btn {
+  cursor: pointer;
   border-radius: 5px;
   width: 40px;
   padding: 8px;

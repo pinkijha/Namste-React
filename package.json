@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",    
+    "clean": "rm -rf dist"
   },
   "keywords": [
     "namste",

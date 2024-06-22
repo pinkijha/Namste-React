@@ -1,6 +1,18 @@
+import { useState } from "react";
 import { LOGO_IMAGE } from "../utils/constant";
+import restObj from "../utils/mockData";
+import RestaurentCard from "./RestaurentCard";
+
+
+function filterData(searchText, restaurants) {
+  const filterData = restaurants.filter((restaurant) =>
+    restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase())
+  );
+  return filterData;
+}
 //header
  const Header = () => {
+  const [searchText, setSearchText] = useState("");
     return (
       <div className="header">
         <div className="logo-container">
@@ -10,8 +22,21 @@ import { LOGO_IMAGE } from "../utils/constant";
           />
         </div>
         <div className="search">
-          <input type="text" placeholder="Searching.."></input>
-          <button type="submit" className="search-btn">
+          <input type="text" placeholder="Search a restaurant you want..." 
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+           
+           />
+          <button type="submit" className="search-btn"
+          onClick={() => {
+            // filter the data
+            const data = filterData(searchText, restaurants);
+            // update the state of restaurants list
+            setRestaurants(data);
+          }}
+          >
             <i className="fa fa-search"></i>
           </button>
         </div>
