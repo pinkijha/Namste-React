@@ -1,11 +1,14 @@
 import RestaurentCard from "./RestaurentCard";
-import restObj from "../utils/mockData";
+// import restObj from "../utils/mockData";
 import { useState, useEffect } from "react";
+// import { SPINNER_LOADING } from "../utils/constant";
+import Shimmer from "./Shimmer";
+
 
 // body Container
 const Body = () => {
 // Local State Variable --> Superpowerful variable
-const [listOfRestaurents, setlistOfRestaurents] = useState(restObj);
+const [listOfRestaurents, setlistOfRestaurents] = useState([]);
 
 useEffect(()=>{
   fetchData();
@@ -22,7 +25,12 @@ console.log(json);
 //optional chaining
 setlistOfRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 
-}
+};
+
+if(listOfRestaurents.length === 0){
+  return  <Shimmer/>
+};
+
 
 // JS Variable
   // let listOfRestaurents2 = [];

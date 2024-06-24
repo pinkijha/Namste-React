@@ -98,4 +98,39 @@
   cursor: pointer;
   padding: 3px 5px;
 }
+
+.loading {
+  font-size: large;
+  display: flex;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  width: 200px;
+  height: 320px;
+  margin: 15px 5px 0 20px;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.shimmerHeading {
+  background-color: #d0cccc;
+  width: 130px;
+  height: 30px;
+  margin-top: 80%;
+  margin-left: 15px;
+}
+
+.shimmerH3 {
+  background-color: #d0cccc;
+  width: 90px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
 /*# sourceMappingURL=index.3a01df49.css.map */

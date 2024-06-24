@@ -27394,8 +27394,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_LINK", ()=>CDN_LINK);
 parcelHelpers.export(exports, "LOGO_IMAGE", ()=>LOGO_IMAGE);
+parcelHelpers.export(exports, "SPINNER_LOADING", ()=>SPINNER_LOADING);
 const CDN_LINK = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const LOGO_IMAGE = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLhOXN4HFC4ywL02TF_4JYd59KCzUXYaUFFlM8XgveLg&s";
+const SPINNER_LOADING = "https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"16tBa"}],"16tBa":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -29201,15 +29203,17 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _restaurentCard = require("./RestaurentCard");
 var _restaurentCardDefault = parcelHelpers.interopDefault(_restaurentCard);
-var _mockData = require("../utils/mockData");
-var _mockDataDefault = parcelHelpers.interopDefault(_mockData);
+// import restObj from "../utils/mockData";
 var _react = require("react");
+// import { SPINNER_LOADING } from "../utils/constant";
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 // body Container
 const Body = ()=>{
     _s();
     // Local State Variable --> Superpowerful variable
-    const [listOfRestaurents, setlistOfRestaurents] = (0, _react.useState)((0, _mockDataDefault.default));
+    const [listOfRestaurents, setlistOfRestaurents] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -29220,6 +29224,11 @@ const Body = ()=>{
         //optional chaining
         setlistOfRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
+    if (listOfRestaurents.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/Components/Body.js",
+        lineNumber: 31,
+        columnNumber: 11
+    }, undefined);
     // JS Variable
     // let listOfRestaurents2 = [];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29236,12 +29245,12 @@ const Body = ()=>{
                     children: "Top Rated Restaurants"
                 }, void 0, false, {
                     fileName: "src/Components/Body.js",
-                    lineNumber: 32,
+                    lineNumber: 40,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 31,
+                lineNumber: 39,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -29249,7 +29258,7 @@ const Body = ()=>{
                 children: "Top restaurant chains in Bangalore"
             }, void 0, false, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 42,
+                lineNumber: 50,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29258,22 +29267,22 @@ const Body = ()=>{
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/Components/Body.js",
-                        lineNumber: 46,
+                        lineNumber: 54,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 43,
+                lineNumber: 51,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Body.js",
-        lineNumber: 30,
+        lineNumber: 38,
         columnNumber: 7
     }, undefined);
 };
-_s(Body, "P4dS2D/Xkr/HDjGNsfV9gpg3df8=");
+_s(Body, "EpfZQrusY3XduRmdc8l5oKjrFy4=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -29284,6 +29293,405 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurentCard":"9s2Dg","../utils/mockData":"iOpE9","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}]},["iICD6","lRQgV","2kQhy"], "2kQhy", "parcelRequire0f94")
+},{"react/jsx-dev-runtime":"iTorj","./RestaurentCard":"9s2Dg","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0","./Shimmer":"c7s09"}],"c7s09":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5bd8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5bd8.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 4,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 4,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 5,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 5,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 6,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 6,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 7,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 7,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 8,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 8,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 9,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 9,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 10,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 10,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 11,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 11,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 12,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 12,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 13,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 13,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 14,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 14,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 15,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 15,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 16,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 16,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 17,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 17,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 17,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 18,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 18,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 18,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "shimmerHeading"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 19,
+                        columnNumber: 43
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "shimmerH3"
+                    }, void 0, false, {
+                        fileName: "src/Components/Shimmer.js",
+                        lineNumber: 19,
+                        columnNumber: 79
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Shimmer.js",
+                lineNumber: 19,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Shimmer.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$5bd8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}]},["iICD6","lRQgV","2kQhy"], "2kQhy", "parcelRequire0f94")
 
 //# sourceMappingURL=index.7271efb6.js.map
