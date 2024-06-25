@@ -27268,6 +27268,8 @@ function filterData(searchText, restaurants1) {
 const Header = ()=>{
     _s();
     const [searchText, setSearchText] = (0, _react.useState)("");
+    console.log("rendered header");
+    const [btnName, setbtnName] = (0, _react.useState)("Login");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
@@ -27278,12 +27280,12 @@ const Header = ()=>{
                     src: (0, _constant.LOGO_IMAGE)
                 }, void 0, false, {
                     fileName: "src/Components/Header.js",
-                    lineNumber: 19,
+                    lineNumber: 26,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.js",
-                lineNumber: 18,
+                lineNumber: 25,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27298,7 +27300,7 @@ const Header = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/Components/Header.js",
-                        lineNumber: 25,
+                        lineNumber: 32,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27314,18 +27316,18 @@ const Header = ()=>{
                             className: "fa fa-search"
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 40,
+                            lineNumber: 47,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Header.js",
-                        lineNumber: 32,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Header.js",
-                lineNumber: 24,
+                lineNumber: 31,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27336,49 +27338,59 @@ const Header = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 45,
+                            lineNumber: 52,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 46,
+                            lineNumber: 53,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 47,
+                            lineNumber: 54,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 48,
+                            lineNumber: 55,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: ()=>{
+                                btnName === "Login" ? setbtnName("Logout") : setbtnName("Login");
+                            },
+                            children: btnName
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.js",
+                            lineNumber: 56,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/Header.js",
-                    lineNumber: 44,
+                    lineNumber: 51,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.js",
-                lineNumber: 43,
+                lineNumber: 50,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Header.js",
-        lineNumber: 17,
+        lineNumber: 24,
         columnNumber: 7
     }, undefined);
 };
-_s(Header, "OAGvOw28fBJQW7HtXCjc9nvla2M=");
+_s(Header, "TPAbyvcmoICsdu4rzRxoEz4brgo=");
 _c = Header;
 exports.default = Header;
 var _c;
@@ -29224,14 +29236,12 @@ const Body = ()=>{
         //optional chaining
         setlistOfRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
-    if (listOfRestaurents.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    // conditional Rendering
+    return listOfRestaurents.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/Components/Body.js",
-        lineNumber: 31,
-        columnNumber: 11
-    }, undefined);
-    // JS Variable
-    // let listOfRestaurents2 = [];
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        lineNumber: 32,
+        columnNumber: 47
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main-container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29245,12 +29255,12 @@ const Body = ()=>{
                     children: "Top Rated Restaurants"
                 }, void 0, false, {
                     fileName: "src/Components/Body.js",
-                    lineNumber: 40,
+                    lineNumber: 35,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 39,
+                lineNumber: 34,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -29258,7 +29268,7 @@ const Body = ()=>{
                 children: "Top restaurant chains in Bangalore"
             }, void 0, false, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 50,
+                lineNumber: 45,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29267,18 +29277,18 @@ const Body = ()=>{
                         resData: restaurant
                     }, restaurant.info.id, false, {
                         fileName: "src/Components/Body.js",
-                        lineNumber: 54,
+                        lineNumber: 49,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/Body.js",
-                lineNumber: 51,
+                lineNumber: 46,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Body.js",
-        lineNumber: 38,
+        lineNumber: 33,
         columnNumber: 7
     }, undefined);
 };

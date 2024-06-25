@@ -27,14 +27,9 @@ setlistOfRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithSty
 
 };
 
-if(listOfRestaurents.length === 0){
-  return  <Shimmer/>
-};
+// conditional Rendering
 
-
-// JS Variable
-  // let listOfRestaurents2 = [];
-    return (
+    return (listOfRestaurents.length === 0) ? <Shimmer/> : (
       <div className="main-container">
         <div className="filter">
           <button className="filter-btn"

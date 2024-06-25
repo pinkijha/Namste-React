@@ -9,10 +9,17 @@ function filterData(searchText, restaurants) {
     restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase())
   );
   return filterData;
+
+  
 }
 //header
  const Header = () => {
   const [searchText, setSearchText] = useState("");
+
+  console.log("rendered header");
+
+  const [btnName, setbtnName] = useState("Login");
+
     return (
       <div className="header">
         <div className="logo-container">
@@ -46,11 +53,18 @@ function filterData(searchText, restaurants) {
             <li>About</li>
             <li>Contact</li>
             <li>Cart</li>
+            <button onClick= {() =>
+               {
+                 btnName === 'Login' ?
+                setbtnName ("Logout") :
+                setbtnName ("Login");               
+               }}>{btnName}</button>
           </ul>
         </div>
       </div>
+      
     );
+    
   };
-
-  
+ 
   export default Header;
