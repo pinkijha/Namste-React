@@ -32,6 +32,13 @@
   list-style: none;
 }
 
+.link {
+  color: azure;
+  margin-right: 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 .search {
   margin-top: 35px;
 }
@@ -41,6 +48,7 @@
   width: 400px;
   height: 35px;
   margin-right: 5px;
+  padding: 10px;
 }
 
 .search-btn {
@@ -96,7 +104,10 @@
 
 .filter-btn {
   cursor: pointer;
-  padding: 3px 5px;
+  color: #fff;
+  background-color: #f7bf45;
+  border: none;
+  padding: 5px;
 }
 
 .loading {
@@ -132,5 +143,48 @@
   height: 30px;
   margin-top: 20px;
   margin-left: 15px;
+}
+
+.about {
+  margin: 20px;
+  display: flex;
+}
+
+.about-section {
+  margin: 10px;
+  padding: 80px;
+}
+
+.about-heading {
+  font-size: 50px;
+}
+
+.about-para {
+  margin-top: 10px;
+}
+
+.title {
+  color: orange;
+  font-weight: 800;
+}
+
+.booktable {
+  color: azure;
+  cursor: pointer;
+  background-color: #e49605;
+  border: 1px solid #d18904;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.about-img {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.contact {
+  display: flex;
 }
 /*# sourceMappingURL=index.3a01df49.css.map */

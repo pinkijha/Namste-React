@@ -52,3 +52,7 @@
 # React Hooks 	(Normal JS Function)
 		- useState() - SuperPowerFul State 
 		- useEffect()	
+
+# 2 types of routing in web App
+	- Client side Routing (SPA)	
+	- Server side Routing	

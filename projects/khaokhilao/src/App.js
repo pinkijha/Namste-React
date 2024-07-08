@@ -2,6 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header.js";
 import Body from "./Components/Body.js";
+import About from "./Components/About.js";
+import Contact from "./Components/Contact.js";
+import Error from "./Components/Error.js";
+import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
 // RestCard inlineStyle
 /* const styleCard = {
@@ -12,10 +16,32 @@ const AppLayout = () => {
   return (
     <div className="app">
       <Header />
-      <Body />
+      <Outlet />
     </div>
   );
 };
 
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout></AppLayout>,
+    children: [
+      {
+        path: "/",
+        element: <Body></Body>
+      },
+      {
+        path: "/about",
+        element: <About></About>
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
+      }
+    ],
+    errorElement: <Error></Error>
+  },
+]) 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter} />);

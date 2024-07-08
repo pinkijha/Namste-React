@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box
 }
+
+/* header */
+
+
 .header{
     background-color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -29,15 +33,23 @@
     font-size: 18px;
     margin-right: 15px;
 }
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: azure;
+}
 
 .search {
     margin-top: 35px;
+
 }
 .search input{    
     border-radius: 5px;
     height: 35px;
     width: 400px;
     margin-right: 5px;
+    padding: 10px;
 }
 .search-btn{
     border-radius: 5px;
@@ -46,6 +58,9 @@
     cursor: pointer;
 
 }
+
+/* restCard */
+
 .top-resto{
     margin: 15px 0px 0px 20px;
     font-size: 24px;
@@ -86,9 +101,14 @@
     padding: 3px 0px 0px 5px;
 }
 .filter-btn{
-    padding: 3px 5px 3px 5px;
+    padding: 5px 5px 5px 5px;
     cursor: pointer;
+    background-color: rgb(247, 191, 69);
+    border: none;
+    color: rgb(255, 255, 255);
 }
+
+/* Shimmer */
 
 .loading{
     display: flex;
@@ -120,4 +140,50 @@
     width: 90px;
     height: 30px;
 
+}
+
+
+/* AboutUs  */
+
+
+.about{
+    margin: 20px;
+    display: flex;
+}
+.about-section{
+    margin: 10px;
+    padding: 80px;
+}
+.about-heading{
+    font-size: 50px;
+}
+.about-para{
+    margin-top: 10px;
+}
+.title{
+    color: orange;
+    font-weight:800;
+}
+
+.booktable{
+    background-color: rgb(228, 150, 5);
+    color: azure;
+    border-radius: 5px;
+    border: 1px rgb(209, 137, 4) solid;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.about-img{
+    margin-left: 0px;
+    margin-right: 50px;
+}
+
+
+/* contact */
+
+.contact{
+    display: flex;
 }

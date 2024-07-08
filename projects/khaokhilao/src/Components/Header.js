@@ -1,25 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LOGO_IMAGE } from "../utils/constant";
 import restObj from "../utils/mockData";
-import RestaurentCard from "./RestaurentCard";
+import { Link } from "react-router-dom";
+// import RestaurentCard from "./RestaurentCard";
+import Body from "./Body";
 
 
-function filterData(searchText, restaurants) {
-  const filterData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name.toLowerCase().includes(searchText.toLowerCase())
-  );
-  return filterData;
 
-  
-}
 //header
- const Header = () => {
+ const Header = (listOfRestaurents, setlistOfRestaurents) => {
   const [searchText, setSearchText] = useState("");
+ 
 
   console.log("rendered header");
 
   const [btnName, setbtnName] = useState("Login");
-
     return (
       <div className="header">
         <div className="logo-container">
@@ -37,11 +32,11 @@ function filterData(searchText, restaurants) {
            
            />
           <button type="submit" className="search-btn"
-          onClick={() => {
-            // filter the data
-            const data = filterData(searchText, restaurants);
-            // update the state of restaurants list
-            setRestaurants(data);
+          onClick={ () => {
+            const filteredRestaurents = listOfRestaurents.filter((res) => 
+              res?.info?.name.toLowerCase().includes(searchText)
+            );
+            setlistOfRestaurents(filteredRestaurents);
           }}
           >
             <i className="fa fa-search"></i>
@@ -49,10 +44,10 @@ function filterData(searchText, restaurants) {
         </div>
         <div className="nav-item">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Cart</li>
+            <li><Link to="/" className="link">Home</Link></li>
+            <li><Link to="/about" className="link">About</Link></li>
+            <li><Link to="/contact" className="link">Contact</Link></li>
+            <li><Link to="/cart" className="link">Cart</Link></li>
             <button onClick= {() =>
                {
                  btnName === 'Login' ?

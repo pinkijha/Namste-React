@@ -9,9 +9,10 @@ import Shimmer from "./Shimmer";
 const Body = () => {
 // Local State Variable --> Superpowerful variable
 const [listOfRestaurents, setlistOfRestaurents] = useState([]);
-
+const [filteredRestaurents, setfilteredRestaurents] = useState([]);
+const [searchText, setSearchText] = useState("");
 useEffect(()=>{
-  fetchData();
+  fetchData()
 }, []);
 
 const fetchData = async () => {
@@ -20,24 +21,48 @@ const fetchData = async () => {
 );
 
 const json = await data.json();
-console.log(json);
+// console.log(json);
+
 
 //optional chaining
 setlistOfRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-
+setfilteredRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 };
 
 // conditional Rendering
 
-    return (listOfRestaurents.length === 0) ? <Shimmer/> : (
-      <div className="main-container">
+    return listOfRestaurents?.length === 0 ? (<Shimmer/>) : (
+      <div className="main-container">       
+
+      <div className="search">
+          <input type="text" placeholder="Search a restaurant you want..." 
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+           
+           />
+          <button type="submit" className="search-btn"
+          onClick={ () => {
+            const filteredRestaurents = listOfRestaurents.filter((res) => 
+              res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
+            );
+            setfilteredRestaurents(filteredRestaurents);
+          }}
+          >
+            <i className="fa fa-search"></i>
+          </button>
+        </div>
+
+
         <div className="filter">
           <button className="filter-btn"
           onClick={() => {
+            // console.log(searchText)
             const filteredList = listOfRestaurents.filter(
               (res) => res.info.avgRating > 4
            );
-           setlistOfRestaurents(filteredList);
+           setfilteredRestaurents(filteredList);
            }}
           >Top Rated Restaurants</button>
         </div>
@@ -45,7 +70,7 @@ setlistOfRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithSty
         <h2 className="top-resto">Top restaurant chains in Bangalore</h2>
         <div className="rest-container">
           {
-            listOfRestaurents.map((restaurant) => (
+            filteredRestaurents?.map((restaurant) => (
             <RestaurentCard key={restaurant.info.id} resData={restaurant}/>
             ))
         } 
