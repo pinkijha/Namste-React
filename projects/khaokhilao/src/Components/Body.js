@@ -3,6 +3,7 @@ import RestaurentCard from "./RestaurentCard";
 import { useState, useEffect } from "react";
 // import { SPINNER_LOADING } from "../utils/constant";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 // body Container
@@ -11,6 +12,7 @@ const Body = () => {
 const [listOfRestaurents, setlistOfRestaurents] = useState([]);
 const [filteredRestaurents, setfilteredRestaurents] = useState([]);
 const [searchText, setSearchText] = useState("");
+
 useEffect(()=>{
   fetchData()
 }, []);
@@ -71,7 +73,11 @@ setfilteredRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithS
         <div className="rest-container">
           {
             filteredRestaurents?.map((restaurant) => (
-            <RestaurentCard key={restaurant.info.id} resData={restaurant}/>
+            <Link 
+            className="cardLink" 
+            key={restaurant.info.id} 
+            to={"/restaurent/" + restaurant.info.id}>
+              <RestaurentCard resData={restaurant}/></Link>
             ))
         } 
 

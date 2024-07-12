@@ -8,7 +8,7 @@ const Error = () =>{
         <div>
             <img  src={ERROR_IMAGE} />
             <h1>{err.status} {err.statusText}</h1>
-            <h3>Error: {err.error.message}</h3>
+            <h3>Error: {err?.error?.message}</h3>
         </div>
     )
 }

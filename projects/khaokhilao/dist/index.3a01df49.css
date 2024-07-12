@@ -75,7 +75,7 @@
 .rest-cards {
   border-radius: 7px;
   width: 200px;
-  height: 320px;
+  height: 340px;
   margin: 15px 5px 0 20px;
   box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
 }
@@ -95,6 +95,12 @@
 .card-descr {
   cursor: pointer;
   padding: 3px 0 0 5px;
+}
+
+.cardLink {
+  color: #000;
+  margin-right: 15px;
+  text-decoration: none;
 }
 
 .filter {
@@ -186,5 +192,193 @@
 
 .contact {
   display: flex;
+}
+
+.resto-menu {
+  border-radius: 7px;
+  width: 50%;
+  height: 250px;
+  margin: 20px 5px 0 400px;
+  display: flex;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.resto-menu-cards {
+  padding: 10px 0 0 10px;
+}
+
+.menuImg {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  margin: 15px 5px 0 20px;
+  padding: 1px;
+}
+
+.menuSpan {
+  margin-left: 5px;
+}
+
+.menuSpandot {
+  margin: 0 0 8px 5px;
+  font-size: large;
+}
+
+.rating {
+  margin-top: 2px;
+  font-weight: 900;
+}
+
+.ratingStar {
+  color: orange;
+}
+
+.cuisines {
+  color: green;
+  margin: 10px 0 8px 5px;
+}
+
+.deliveryTime {
+  margin: 10px 0 8px 5px;
+}
+
+.shimmerMenucontainer {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmerestoMenu-card {
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  width: 50%;
+  height: 250px;
+  margin: 20px 5px 0 400px;
+  display: flex;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.shimmerIMG {
+  background-color: #d0cccc;
+  width: 200px;
+  height: 200px;
+  margin: 10px 5px 0 20px;
+  padding: 1px;
+}
+
+.shimmerMenuHeading {
+  background-color: #d0cccc;
+  width: 400px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.shimmerMenuH3 {
+  background-color: #d0cccc;
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.shimmerMenupara {
+  background-color: #d0cccc;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.FlatPriceContainer {
+  border-radius: 7px;
+  width: 45%;
+  height: 250px;
+  margin: 20px 5px 5px 450px;
+}
+
+.FlatPriceHeading {
+  margin: 5px 0 30px;
+  font-size: large;
+}
+
+.FlatPriceCard {
+  display: flex;
+}
+
+.FlatPriceImgContainer {
+  margin: 5px 0 10px 200px;
+}
+
+.FlatPriceCard p {
+  width: 300px;
+}
+
+.FlatPriceImg {
+  border-radius: 5px;
+  width: 190px;
+  height: 150px;
+}
+
+.add-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  padding: 8px;
+  font-size: large;
+}
+
+.FltPriceContainer {
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  width: 40%;
+  height: 200px;
+  margin: 20px 5px 0 450px;
+  display: flex;
+}
+
+.flatCard h3 {
+  background-color: #d0cccc;
+  width: 300px;
+  height: 30px;
+  margin: 20px 10px 0 20px;
+}
+
+.flatCard h5 {
+  background-color: #d0cccc;
+  width: 200px;
+  height: 30px;
+  margin: 20px 10px 0 20px;
+}
+
+.flatCard p {
+  background-color: #d0cccc;
+  width: 100px;
+  height: 30px;
+  margin: 20px 10px 0 20px;
+}
+
+.shimmerFlatPriceIMG {
+  background-color: #d0cccc;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  margin: 20px 10px 10px 100px;
+}
+
+.FlatPriceBtn {
+  background-color: #d0cccc;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin: 5px 0 10px 100px;
 }
 /*# sourceMappingURL=index.3a01df49.css.map */
