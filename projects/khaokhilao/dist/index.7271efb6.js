@@ -27347,46 +27347,6 @@ const Header = (listOfRestaurents, setlistOfRestaurents)=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        placeholder: "Search a restaurant you want...",
-                        value: searchText,
-                        onChange: (e)=>{
-                            setSearchText(e.target.value);
-                        }
-                    }, void 0, false, {
-                        fileName: "src/Components/Header.js",
-                        lineNumber: 27,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        type: "submit",
-                        className: "search-btn",
-                        onClick: ()=>{
-                            const filteredRestaurents = listOfRestaurents.filter((res)=>res?.info?.name.toLowerCase().includes(searchText));
-                            setlistOfRestaurents(filteredRestaurents);
-                        },
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                            className: "fa fa-search"
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.js",
-                            lineNumber: 42,
-                            columnNumber: 13
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Header.js",
-                        lineNumber: 34,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Header.js",
-                lineNumber: 26,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-item",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
@@ -36242,7 +36202,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurentCard":"9s2Dg","react":"21dqq","./Shimmer":"c7s09","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0","react-router-dom":"9xmpe"}],"9s2Dg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurentCard":"9s2Dg","react":"21dqq","./Shimmer":"c7s09","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"9s2Dg":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d240 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37003,141 +36963,238 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../utils/constant");
-const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "contact",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "contact-img",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "contact-",
-                    src: (0, _constant.CONTACT_IMAGE)
+var _contactForm = require("./ContactForm");
+var _contactFormDefault = parcelHelpers.interopDefault(_contactForm);
+var _contactFormClass = require("./ContactFormClass");
+var _contactFormClassDefault = parcelHelpers.interopDefault(_contactFormClass);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Contact extends (0, _reactDefault.default).Component {
+    constructor(){
+        super();
+    }
+    componentDidMount() {}
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "contact",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "contact-img",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "contact-img",
+                        src: (0, _constant.CONTACT_IMAGE)
+                    }, void 0, false, {
+                        fileName: "src/Components/Contact.js",
+                        lineNumber: 19,
+                        columnNumber: 21
+                    }, this)
                 }, void 0, false, {
                     fileName: "src/Components/Contact.js",
-                    lineNumber: 7,
+                    lineNumber: 18,
                     columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/Contact.js",
-                lineNumber: 6,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Contact Us"
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 12,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        children: "First Name:"
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 13,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        id: "fname",
-                        name: "firstname",
-                        placeholder: "Your name.."
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 14,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        children: "First Name:"
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 17,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        id: "fname",
-                        name: "firstname",
-                        placeholder: "Your name.."
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 18,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                        for: "country",
-                        children: "Country"
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 22,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                        id: "country",
-                        name: "country",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "australia",
-                                children: "India"
-                            }, void 0, false, {
-                                fileName: "src/Components/Contact.js",
-                                lineNumber: 24,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "canada",
-                                children: "Canada"
-                            }, void 0, false, {
-                                fileName: "src/Components/Contact.js",
-                                lineNumber: 25,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                value: "usa",
-                                children: "USA"
-                            }, void 0, false, {
-                                fileName: "src/Components/Contact.js",
-                                lineNumber: 26,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 23,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        children: "Submit"
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 29,
-                        columnNumber: 13
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/Contact.js",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Contact.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Contact;
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactFormClassDefault.default), {}, void 0, false, {
+                    fileName: "src/Components/Contact.js",
+                    lineNumber: 23,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Components/Contact.js",
+            lineNumber: 17,
+            columnNumber: 13
+        }, this);
+    }
+}
 exports.default = Contact;
-var _c;
-$RefreshReg$(_c, "Contact");
 
   $parcel$ReactRefreshHelpers$84fc.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"8T9iu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./ContactForm":"g3IfF","./ContactFormClass":"jm0bR","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"g3IfF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9941 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9941.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _contactFormClass = require("./ContactFormClass");
+var _contactFormClassDefault = parcelHelpers.interopDefault(_contactFormClass);
+const ContactForm = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "contact-heading",
+                children: "Contact Us"
+            }, void 0, false, {
+                fileName: "src/Components/ContactForm.js",
+                lineNumber: 6,
+                columnNumber: 14
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "contact-card",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    className: "contact-form",
+                    children: [
+                        "Full Name:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "enter your full name"
+                        }, void 0, false, {
+                            fileName: "src/Components/ContactForm.js",
+                            lineNumber: 10,
+                            columnNumber: 21
+                        }, undefined),
+                        "Email:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "email",
+                            placeholder: "enter your full email"
+                        }, void 0, false, {
+                            fileName: "src/Components/ContactForm.js",
+                            lineNumber: 12,
+                            columnNumber: 21
+                        }, undefined),
+                        "Mobile Number:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "number",
+                            placeholder: "enter your full number"
+                        }, void 0, false, {
+                            fileName: "src/Components/ContactForm.js",
+                            lineNumber: 14,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactFormClassDefault.default), {}, void 0, false, {
+                            fileName: "src/Components/ContactForm.js",
+                            lineNumber: 21,
+                            columnNumber: 22
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "submit-btn",
+                            type: "submit",
+                            children: "Send"
+                        }, void 0, false, {
+                            fileName: "src/Components/ContactForm.js",
+                            lineNumber: 22,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/ContactForm.js",
+                    lineNumber: 8,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/ContactForm.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/ContactForm.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = ContactForm;
+exports.default = ContactForm;
+var _c;
+$RefreshReg$(_c, "ContactForm");
+
+  $parcel$ReactRefreshHelpers$9941.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ContactFormClass":"jm0bR","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"jm0bR":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f9d9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f9d9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class ContactFormClass extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            userInfo: {
+                name: "shailesh",
+                location: "bihar",
+                avatar_url: "https//dummy.photo"
+            }
+        };
+    }
+    async componentDidMount() {
+        const data = await fetch("https://api.github.com/users/pinkijha");
+        const json = await data.json();
+        this.setState({
+            userInfo: json
+        });
+        console.log(json);
+    }
+    render() {
+        const { id, login, avatar_url } = this.state.userInfo;
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: [
+                            "Id: ",
+                            id
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/ContactFormClass.js",
+                        lineNumber: 34,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: [
+                            "Name: ",
+                            login
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/ContactFormClass.js",
+                        lineNumber: 35,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: avatar_url
+                    }, void 0, false, {
+                        fileName: "src/Components/ContactFormClass.js",
+                        lineNumber: 36,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/ContactFormClass.js",
+                lineNumber: 33,
+                columnNumber: 13
+            }, this)
+        }, void 0, false, {
+            fileName: "src/Components/ContactFormClass.js",
+            lineNumber: 31,
+            columnNumber: 13
+        }, this);
+    }
+}
+exports.default = ContactFormClass;
+
+  $parcel$ReactRefreshHelpers$f9d9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"8T9iu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9bf6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

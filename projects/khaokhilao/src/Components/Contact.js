@@ -1,37 +1,31 @@
 import { CONTACT_IMAGE } from "../utils/constant";
+import ContactForm from "./ContactForm";
+import ContactFormClass from "./ContactFormClass";
+import React from "react";
 
-const Contact = () => {
-    return(
-        <div className="contact">
-            <div className="contact-img">
-                <img  className="contact-"
-                src= {CONTACT_IMAGE} />
+class Contact extends React.Component {
 
+    constructor(){
+        super();
+    }
+
+    componentDidMount(){
+    }
+
+    render(){
+        return(
+            <div className="contact">
+                <div className="contact-img">
+                    <img  className="contact-img"
+                    src= {CONTACT_IMAGE} />
+                </div>
+                {/* <ContactForm/> */}
+                <ContactFormClass  />
             </div>
-            <form>
-            <h1>Contact Us</h1>
-            <label>First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-
-            
-            <label>First Name:</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-
-            
-            
-            <label for="country">Country</label>
-            <select id="country" name="country">
-            <option value="australia">India</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            </select>
-
-            <button>Submit</button>
-
-            
-            </form>
-
-        </div>
-    )
+        )
+    }
+    
+  
+    
 }
 export default Contact;

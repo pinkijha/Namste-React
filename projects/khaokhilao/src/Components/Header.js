@@ -23,7 +23,7 @@ import Body from "./Body";
             src={LOGO_IMAGE}
           />
         </div>
-        <div className="search">
+        {/* <div className="search">
           <input type="text" placeholder="Search a restaurant you want..." 
             value={searchText}
             onChange={(e) => {
@@ -41,7 +41,7 @@ import Body from "./Body";
           >
             <i className="fa fa-search"></i>
           </button>
-        </div>
+        </div> */}
         <div className="nav-item">
           <ul>
             <li><Link to="/" className="link">Home</Link></li>
