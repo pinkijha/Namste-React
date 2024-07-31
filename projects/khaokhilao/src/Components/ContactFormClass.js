@@ -11,6 +11,7 @@ class ContactFormClass extends React.Component{
 
             }
          };
+        //  console.log("constructor");
     }
     
     async componentDidMount(){
@@ -21,10 +22,20 @@ class ContactFormClass extends React.Component{
             userInfo: json,
         })
         console.log(json);
+        // console.log("didMount")
+        this.timer = setInterval(()=>{
+            console.log("hello")
+        },1000)
 
     }
-    
 
+    componentDidUpdate(){
+        console.log("did update")
+
+    }
+    componentWillUnmount(){
+        clearInterval(this.timer)
+    }
     render(){       
         const {id, login, avatar_url} = this.state.userInfo;
         return(            
@@ -35,6 +46,8 @@ class ContactFormClass extends React.Component{
                 <h1>Name: {login}</h1>
                 <img src={avatar_url}></img>
                 {/* <h4>{location}</h4> */}
+                
+               
 
             </div>                
                 {/* Subject:

@@ -37133,6 +37133,7 @@ class ContactFormClass extends (0, _reactDefault.default).Component {
                 avatar_url: "https//dummy.photo"
             }
         };
+    //  console.log("constructor");
     }
     async componentDidMount() {
         const data = await fetch("https://api.github.com/users/pinkijha");
@@ -37141,6 +37142,16 @@ class ContactFormClass extends (0, _reactDefault.default).Component {
             userInfo: json
         });
         console.log(json);
+        // console.log("didMount")
+        this.timer = setInterval(()=>{
+            console.log("hello");
+        }, 1000);
+    }
+    componentDidUpdate() {
+        console.log("did update");
+    }
+    componentWillUnmount() {
+        clearInterval(this.timer);
     }
     render() {
         const { id, login, avatar_url } = this.state.userInfo;
@@ -37154,7 +37165,7 @@ class ContactFormClass extends (0, _reactDefault.default).Component {
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/ContactFormClass.js",
-                        lineNumber: 34,
+                        lineNumber: 45,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -37164,25 +37175,25 @@ class ContactFormClass extends (0, _reactDefault.default).Component {
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/ContactFormClass.js",
-                        lineNumber: 35,
+                        lineNumber: 46,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: avatar_url
                     }, void 0, false, {
                         fileName: "src/Components/ContactFormClass.js",
-                        lineNumber: 36,
+                        lineNumber: 47,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/ContactFormClass.js",
-                lineNumber: 33,
+                lineNumber: 44,
                 columnNumber: 13
             }, this)
         }, void 0, false, {
             fileName: "src/Components/ContactFormClass.js",
-            lineNumber: 31,
+            lineNumber: 42,
             columnNumber: 13
         }, this);
     }
