@@ -37222,32 +37222,36 @@ var _react = require("react");
 var _reactFontawesome = require("@fortawesome/react-fontawesome");
 var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 var _reactRouterDom = require("react-router-dom");
+var _useRestaurentsMenu = require("../utils/useRestaurentsMenu");
+var _useRestaurentsMenuDefault = parcelHelpers.interopDefault(_useRestaurentsMenu);
 var _s = $RefreshSig$();
 const RestaurentsMenu = ()=>{
     _s();
-    const [restaurentInfo, setrestaurentInfo] = (0, _react.useState)(null);
     const { resId } = (0, _reactRouterDom.useParams)();
-    (0, _react.useEffect)(()=>{
-        fetchMenu();
-    }, []);
-    const fetchMenu = async ()=>{
-        const data = await fetch((0, _constant.MENU_URL) + resId + "&catalog_qa=undefined&submitAction=ENTER");
-        const json = await data.json();
-        console.log(json);
-        setrestaurentInfo(json.data);
-    };
+    // Custom hooks
+    const restaurentInfo = (0, _useRestaurentsMenuDefault.default)(resId);
+    // useEffect(() => {
+    //     fetchMenu();
+    // },[])
+    // const fetchMenu = async() => {
+    //     const data = await fetch(MENU_URL +resId+"&catalog_qa=undefined&submitAction=ENTER"
+    //     );
+    //     const json = await data.json();
+    //     console.log(json);
+    //     setrestaurentInfo(json.data)
+    // } 
     // fonta-wesome
     const element = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
         icon: (0, _freeSolidSvgIcons.faStar)
     }, void 0, false, {
         fileName: "src/Components/RestaurentsMenu.js",
-        lineNumber: 28,
+        lineNumber: 30,
         columnNumber: 21
     }, undefined);
     // shimmer UI
     if (restaurentInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerRestoMenuDefault.default), {}, void 0, false, {
         fileName: "src/Components/RestaurentsMenu.js",
-        lineNumber: 31,
+        lineNumber: 33,
         columnNumber: 42
     }, undefined);
     // defined names from api 
@@ -37278,7 +37282,7 @@ const RestaurentsMenu = ()=>{
                         src: (0, _constant.CDN_LINK) + cloudinaryImageId
                     }, void 0, false, {
                         fileName: "src/Components/RestaurentsMenu.js",
-                        lineNumber: 59,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37288,7 +37292,7 @@ const RestaurentsMenu = ()=>{
                                 children: name
                             }, void 0, false, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 62,
+                                lineNumber: 64,
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -37302,7 +37306,7 @@ const RestaurentsMenu = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 63,
+                                        lineNumber: 65,
                                         columnNumber: 40
                                     }, undefined),
                                     avgRating,
@@ -37315,7 +37319,7 @@ const RestaurentsMenu = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 64,
+                                        lineNumber: 66,
                                         columnNumber: 21
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -37323,13 +37327,13 @@ const RestaurentsMenu = ()=>{
                                         children: costForTwoMessage
                                     }, void 0, false, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 65,
+                                        lineNumber: 67,
                                         columnNumber: 21
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 63,
+                                lineNumber: 65,
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -37337,7 +37341,7 @@ const RestaurentsMenu = ()=>{
                                 children: cuisines.join(" , ")
                             }, void 0, false, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 67,
+                                lineNumber: 69,
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -37347,7 +37351,7 @@ const RestaurentsMenu = ()=>{
                                         icon: (0, _freeSolidSvgIcons.faLocationDot)
                                     }, void 0, false, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 68,
+                                        lineNumber: 70,
                                         columnNumber: 42
                                     }, undefined),
                                     " ",
@@ -37355,7 +37359,7 @@ const RestaurentsMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 68,
+                                lineNumber: 70,
                                 columnNumber: 17
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -37367,7 +37371,7 @@ const RestaurentsMenu = ()=>{
                                         children: "|"
                                     }, void 0, false, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 70,
+                                        lineNumber: 72,
                                         columnNumber: 18
                                     }, undefined),
                                     " ",
@@ -37375,19 +37379,19 @@ const RestaurentsMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 69,
+                                lineNumber: 71,
                                 columnNumber: 17
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/RestaurentsMenu.js",
-                        lineNumber: 61,
+                        lineNumber: 63,
                         columnNumber: 12
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/RestaurentsMenu.js",
-                lineNumber: 58,
+                lineNumber: 60,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37398,7 +37402,7 @@ const RestaurentsMenu = ()=>{
                         children: "Recommended "
                     }, void 0, false, {
                         fileName: "src/Components/RestaurentsMenu.js",
-                        lineNumber: 76,
+                        lineNumber: 78,
                         columnNumber: 12
                     }, undefined),
                     itemCards?.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37410,7 +37414,7 @@ const RestaurentsMenu = ()=>{
                                             children: item.card.info.name
                                         }, void 0, false, {
                                             fileName: "src/Components/RestaurentsMenu.js",
-                                            lineNumber: 82,
+                                            lineNumber: 84,
                                             columnNumber: 21
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -37420,20 +37424,20 @@ const RestaurentsMenu = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/Components/RestaurentsMenu.js",
-                                            lineNumber: 83,
+                                            lineNumber: 85,
                                             columnNumber: 21
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             children: item.card.info.description
                                         }, void 0, false, {
                                             fileName: "src/Components/RestaurentsMenu.js",
-                                            lineNumber: 84,
+                                            lineNumber: 86,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/RestaurentsMenu.js",
-                                    lineNumber: 81,
+                                    lineNumber: 83,
                                     columnNumber: 21
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37444,7 +37448,7 @@ const RestaurentsMenu = ()=>{
                                             src: (0, _constant.CDN_LINK) + item.card.info.imageId
                                         }, void 0, false, {
                                             fileName: "src/Components/RestaurentsMenu.js",
-                                            lineNumber: 88,
+                                            lineNumber: 90,
                                             columnNumber: 21
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -37452,37 +37456,38 @@ const RestaurentsMenu = ()=>{
                                             children: "ADD +"
                                         }, void 0, false, {
                                             fileName: "src/Components/RestaurentsMenu.js",
-                                            lineNumber: 89,
+                                            lineNumber: 91,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/RestaurentsMenu.js",
-                                    lineNumber: 87,
+                                    lineNumber: 89,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, item.card.info.id, true, {
                             fileName: "src/Components/RestaurentsMenu.js",
-                            lineNumber: 80,
+                            lineNumber: 82,
                             columnNumber: 17
                         }, undefined))
                 ]
             }, void 0, true, {
                 fileName: "src/Components/RestaurentsMenu.js",
-                lineNumber: 75,
+                lineNumber: 77,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/RestaurentsMenu.js",
-        lineNumber: 57,
+        lineNumber: 59,
         columnNumber: 9
     }, undefined);
 };
-_s(RestaurentsMenu, "OXVy9QDOtXbr59JSUrzLlRjKHcM=", false, function() {
+_s(RestaurentsMenu, "mPJG/ny25DFV0eW7y9awyGVzZuk=", false, function() {
     return [
-        (0, _reactRouterDom.useParams)
+        (0, _reactRouterDom.useParams),
+        (0, _useRestaurentsMenuDefault.default)
     ];
 });
 _c = RestaurentsMenu;
@@ -37495,7 +37500,7 @@ $RefreshReg$(_c, "RestaurentsMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./ShimmerRestoMenu":"4V2I7","react":"21dqq","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"4V2I7":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./ShimmerRestoMenu":"4V2I7","react":"21dqq","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","react-router-dom":"9xmpe","../utils/useRestaurentsMenu":"cFTqp","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"4V2I7":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$73a0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -63001,7 +63006,41 @@ var icons = {
     faLevelUpAlt: faLevelUpAlt
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"16tBa"}],"iQH4s":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"16tBa"}],"cFTqp":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e9e6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e9e6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _constant = require("./constant");
+var _react = require("react");
+var _s = $RefreshSig$();
+const useRestaurentsMenu = (resId)=>{
+    _s();
+    const [restaurentInfo, setrestaurentInfo] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        fetchData();
+    }, []);
+    const fetchData = async ()=>{
+        const data = await fetch((0, _constant.MENU_URL) + resId + "&catalog_qa=undefined&submitAction=ENTER");
+        const json = await data.json();
+        console.log(json);
+        setrestaurentInfo(json.data);
+    };
+    return restaurentInfo;
+};
+_s(useRestaurentsMenu, "lPKT91yVZfpw02aoEG3vur9UH/0=");
+exports.default = useRestaurentsMenu;
+
+  $parcel$ReactRefreshHelpers$e9e6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"./constant":"6mqGZ","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"iQH4s":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$24a5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

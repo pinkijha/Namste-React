@@ -4,26 +4,28 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import { useParams } from "react-router-dom";
-import { MENU_URL } from "../utils/constant";
+import useRestaurentsMenu from "../utils/useRestaurentsMenu";
 
 
 const RestaurentsMenu = () => {
-const [restaurentInfo, setrestaurentInfo] = useState(null);
 const {resId} = useParams();
 
+// Custom hooks
+const restaurentInfo = useRestaurentsMenu(resId)
 
-    useEffect(() => {
-        fetchMenu();
-    },[])
 
-    const fetchMenu = async() => {
-        const data = await fetch(MENU_URL +resId+"&catalog_qa=undefined&submitAction=ENTER"
+    // useEffect(() => {
+    //     fetchMenu();
+    // },[])
 
-        );
-        const json = await data.json();
-        console.log(json);
-        setrestaurentInfo(json.data)
-    } 
+    // const fetchMenu = async() => {
+    //     const data = await fetch(MENU_URL +resId+"&catalog_qa=undefined&submitAction=ENTER"
+
+    //     );
+    //     const json = await data.json();
+    //     console.log(json);
+    //     setrestaurentInfo(json.data)
+    // } 
     // fonta-wesome
     const element = <FontAwesomeIcon icon={faStar} />
 
