@@ -3,7 +3,8 @@ import { LOGO_IMAGE } from "../utils/constant";
 import restObj from "../utils/mockData";
 import { Link } from "react-router-dom";
 // import RestaurentCard from "./RestaurentCard";
-import Body from "./Body";
+import useOnlineStatus from "../utils/useOnlineStatus";
+
 
 
 
@@ -13,6 +14,7 @@ import Body from "./Body";
  
 
   console.log("rendered header");
+   const onlineStatus = useOnlineStatus();
 
   const [btnName, setbtnName] = useState("Login");
     return (
@@ -23,30 +25,14 @@ import Body from "./Body";
             src={LOGO_IMAGE}
           />
         </div>
-        {/* <div className="search">
-          <input type="text" placeholder="Search a restaurant you want..." 
-            value={searchText}
-            onChange={(e) => {
-              setSearchText(e.target.value);
-            }}
-           
-           />
-          <button type="submit" className="search-btn"
-          onClick={ () => {
-            const filteredRestaurents = listOfRestaurents.filter((res) => 
-              res?.info?.name.toLowerCase().includes(searchText)
-            );
-            setlistOfRestaurents(filteredRestaurents);
-          }}
-          >
-            <i className="fa fa-search"></i>
-          </button>
-        </div> */}
+       
         <div className="nav-item">
           <ul>
+            <li>Online Status: {onlineStatus ? '✅' : '🔴'}</li>
             <li><Link to="/" className="link">Home</Link></li>
             <li><Link to="/about" className="link">About</Link></li>
             <li><Link to="/contact" className="link">Contact</Link></li>
+            <li><Link to="/grocery" className="link">Grocery</Link></li>
             <li><Link to="/cart" className="link">Cart</Link></li>
             <button onClick= {() =>
                {
