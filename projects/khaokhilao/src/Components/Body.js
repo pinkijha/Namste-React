@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-
+import Footer from "./Footer";
 
 // body Container
 const Body = () => {
@@ -44,15 +44,18 @@ return (
     return listOfRestaurents?.length === 0 ? (<Shimmer/>) : (
       <div className="main-container">       
 
-      <div className="search">
-          <input type="text" placeholder="Search a restaurant you want..." 
+      <div className="search flex justify-center m-2 p-5 content-center ">
+          <input className="p-2 w-2/5 border border-solid rounded-md border-black
+           " 
+          type="text" placeholder="Search a restaurant you want..." 
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
            
            />
-          <button type="submit" className="search-btn"
+          <button type="submit" 
+          className="search-btn p-2 text-green-600/100 font-thin text-3xl hover:cursor-pointer"
           onClick={ () => {
             const filteredRestaurents = listOfRestaurents.filter((res) => 
               res?.info?.name.toLowerCase().includes(searchText.toLowerCase())
@@ -66,7 +69,8 @@ return (
 
 
         <div className="filter">
-          <button className="filter-btn"
+          <button className="filter-btn p-2 mx-10 my-4 w-80 border border-solid
+           border-green-400 rounded-lg hover:cursor-pointer hover:border-black font-bold hover:text-green-600"
           onClick={() => {
             // console.log(searchText)
             const filteredList = listOfRestaurents.filter(
@@ -77,8 +81,8 @@ return (
           >Top Rated Restaurants</button>
         </div>
 
-        <h2 className="top-resto">Top restaurant chains in Bangalore</h2>
-        <div className="rest-container">
+        <h2 className="top-resto mx-10 my-4 font-bold text-2xl ">Top restaurant chains in Bangalore</h2>
+        <div className="rest-container flex flex-wrap mx-10">
           {
             filteredRestaurents?.map((restaurant) => (
             <Link 
@@ -88,8 +92,12 @@ return (
               <RestaurentCard resData={restaurant}/></Link>
             ))
         } 
-
         </div>
+
+        <div className=" flex justify-center mt-4 p-4 border border-t-2 shadow-inner ">
+          <Footer/>
+        </div>  
+        
       </div>
     );
   };
