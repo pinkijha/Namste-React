@@ -1,11 +1,13 @@
-import RestaurentCard from "./RestaurentCard";
+import RestaurentCard, {withPromotedLabel} from "./RestaurentCard";
 // import restObj from "../utils/mockData";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 // import { SPINNER_LOADING } from "../utils/constant";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import Footer from "./Footer";
+import { withPromotedLabel } from "./RestaurentCard";
+import UserContext from "../utils/UserContext";
 
 // body Container
 const Body = () => {
@@ -13,6 +15,10 @@ const Body = () => {
 const [listOfRestaurents, setlistOfRestaurents] = useState([]);
 const [filteredRestaurents, setfilteredRestaurents] = useState([]);
 const [searchText, setSearchText] = useState("");
+
+const RestaurentCardPromoted = withPromotedLabel(RestaurentCard);
+
+console.log("body rendere, " , listOfRestaurents);
 
 useEffect(()=>{
   fetchData()
@@ -28,8 +34,8 @@ const json = await data.json();
 
 
 //optional chaining
-setlistOfRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-setfilteredRestaurents(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+setlistOfRestaurents(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+setfilteredRestaurents(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 };
 
 const onlineStatus = useOnlineStatus();
@@ -38,6 +44,9 @@ if (onlineStatus === false)
 return (
 <h1 style={{backgroundColor:"red"}}>Looks like you are offline, Please check your internet Connection!!</h1>
 );
+
+//username using context
+const {logedInUser, setUserName} = useContext (UserContext);
 
 // conditional Rendering
 
@@ -67,7 +76,7 @@ return (
           </button>
         </div>
 
-
+         <div className="flex">
         <div className="filter">
           <button className="filter-btn p-2 mx-10 my-4 w-80 border border-solid
            border-green-400 rounded-lg hover:cursor-pointer hover:border-black font-bold hover:text-green-600"
@@ -80,6 +89,22 @@ return (
            }}
           >Top Rated Restaurants</button>
         </div>
+            
+        <div className="my-4 mx-4">
+        <label className="m-2">User Name: </label>
+        <input className="p-2 w-3/5 border border-solid rounded-md border-black
+           " 
+          type="text"  
+            value={logedInUser}
+            onChange={(e) => {
+              setUserName(e.target.value);
+            }}
+           
+           />
+        </div>
+
+        </div>
+        
 
         <h2 className="top-resto mx-10 my-4 font-bold text-2xl ">Top restaurant chains in Bangalore</h2>
         <div className="rest-container flex flex-wrap mx-10">
@@ -89,7 +114,11 @@ return (
             className="cardLink" 
             key={restaurant.info.id} 
             to={"/restaurent/" + restaurant.info.id}>
-              <RestaurentCard resData={restaurant}/></Link>
+              
+              {restaurant.info.promoted ? 
+              (<RestaurentCardPromoted resData={restaurant} />) :
+              (<RestaurentCard resData={restaurant}/>)}
+            </Link>
             ))
         } 
         </div>

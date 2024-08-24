@@ -617,80 +617,102 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../utils/constant");
 var _header = require("./Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
+var _footer = require("./Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "about",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "about-section",
+                className: "about flex m-[20px]",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "about-heading",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "about-section m-[10px] p-[80px]",
                         children: [
-                            " We Deliver ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "about-heading font-bold text-5xl",
+                                children: [
+                                    " We Deliver ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 10,
+                                        columnNumber: 74
+                                    }, undefined),
+                                    " Delicious & ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 10,
+                                        columnNumber: 92
+                                    }, undefined),
+                                    " healthy Food"
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Components/About.js",
-                                lineNumber: 8,
-                                columnNumber: 55
+                                lineNumber: 10,
+                                columnNumber: 13
                             }, undefined),
-                            " Delicious & ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "about-para mt-[10px]",
+                                children: [
+                                    "At ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "title text-orange-700 font-bold",
+                                        children: "Khao Khilao"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/About.js",
+                                        lineNumber: 11,
+                                        columnNumber: 52
+                                    }, undefined),
+                                    ", we're passionate about bringing delicious food from your favorite restaurants straight to your doorstep. Our mission is to provide a seamless and delightful food delivery experience, making it easy for you to enjoy a variety of cuisines from the comfort of your home or office."
+                                ]
+                            }, void 0, true, {
                                 fileName: "src/Components/About.js",
-                                lineNumber: 8,
-                                columnNumber: 73
+                                lineNumber: 11,
+                                columnNumber: 13
                             }, undefined),
-                            " healthy Food"
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/About.js",
-                        lineNumber: 8,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "about-para",
-                        children: [
-                            "At ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "title",
-                                children: "Khao Khilao"
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "booktable    bg-orange-500 text-white rounded-md border-orange-200   cursor-pointer p-2 mt-4  text-2xl",
+                                children: "Book A Table"
                             }, void 0, false, {
                                 fileName: "src/Components/About.js",
-                                lineNumber: 9,
-                                columnNumber: 42
-                            }, undefined),
-                            ", we're passionate about bringing delicious food from your favorite restaurants straight to your doorstep. Our mission is to provide a seamless and delightful food delivery experience, making it easy for you to enjoy a variety of cuisines from the comfort of your home or office."
+                                lineNumber: 12,
+                                columnNumber: 13
+                            }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/About.js",
                         lineNumber: 9,
                         columnNumber: 13
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "booktable",
-                        children: "Book A Table"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "about-img ml-0 mr-[50px]",
+                        src: (0, _constant.ABOUT_IMAGE)
                     }, void 0, false, {
                         fileName: "src/Components/About.js",
-                        lineNumber: 10,
+                        lineNumber: 16,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/About.js",
-                lineNumber: 7,
-                columnNumber: 13
+                lineNumber: 8,
+                columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "about-img",
-                src: (0, _constant.ABOUT_IMAGE)
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: " flex justify-center mt-4 p-4 border border-t-2 shadow-inner ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    fileName: "src/Components/About.js",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/About.js",
-                lineNumber: 12,
-                columnNumber: 13
+                lineNumber: 21,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/About.js",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 9
     }, undefined);
 };
@@ -704,6 +726,6 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./Header":"fNIx6","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}]},["bhEaQ","lRQgV"], null, "parcelRequire0f94")
+},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./Header":"fNIx6","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0","./Footer":"eUZ6J"}]},["bhEaQ","lRQgV"], null, "parcelRequire0f94")
 
 //# sourceMappingURL=About.3f2e41a3.js.map

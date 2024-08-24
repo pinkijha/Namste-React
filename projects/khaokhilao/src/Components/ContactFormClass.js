@@ -24,13 +24,13 @@ class ContactFormClass extends React.Component{
         console.log(json);
         // console.log("didMount")
         this.timer = setInterval(()=>{
-            console.log("hello")
+            // console.log("hello")
         },1000)
 
     }
 
     componentDidUpdate(){
-        console.log("did update")
+        // console.log("did update")
 
     }
     componentWillUnmount(){
