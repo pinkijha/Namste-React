@@ -23,5 +23,7 @@
     - npm install --save-dev babel-jest @babel/core @babel/preset-env
 - Configure Babel 
 - Configure Parcel Config file to disable babel transpilation
-- 
+- Jest Configuration 
+    - npx jest --init
+- Install JsDom library
 
