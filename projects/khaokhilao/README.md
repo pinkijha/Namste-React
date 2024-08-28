@@ -19,7 +19,7 @@
     - npm i -D @testing-library/react
 - Installed jest
     - Npm i -D jest
-- Installed Babel Dependency
+- Installed Babel Dependency - from jest website
     - npm install --save-dev babel-jest @babel/core @babel/preset-env
 - Configure Babel 
 - Configure Parcel Config file to disable babel transpilation
