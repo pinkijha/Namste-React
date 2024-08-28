@@ -726,6 +726,6 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./Header":"fNIx6","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0","./Footer":"eUZ6J"}]},["bhEaQ","lRQgV"], null, "parcelRequire0f94")
+},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./Header":"fNIx6","./Footer":"eUZ6J","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}]},["bhEaQ","lRQgV"], null, "parcelRequire0f94")
 
 //# sourceMappingURL=About.3f2e41a3.js.map
