@@ -1,0 +1,83 @@
+.loading {
+  font-size: large;
+  display: flex;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  width: 200px;
+  height: 320px;
+  margin: 15px 5px 0 20px;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.shimmerHeading {
+  background-color: #d0cccc;
+  width: 130px;
+  height: 30px;
+  margin-top: 85%;
+  margin-left: 15px;
+}
+
+.shimmerH3 {
+  background-color: #d0cccc;
+  width: 90px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.shimmerMenucontainer {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmerestoMenu-card {
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  width: 50%;
+  height: 250px;
+  margin: 20px 5px 0 400px;
+  display: flex;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+}
+
+.shimmerIMG {
+  background-color: #d0cccc;
+  width: 200px;
+  height: 200px;
+  margin: 10px 5px 0 20px;
+  padding: 1px;
+}
+
+.shimmerMenuHeading {
+  background-color: #d0cccc;
+  width: 400px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.shimmerMenuH3 {
+  background-color: #d0cccc;
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.shimmerMenupara {
+  background-color: #d0cccc;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */

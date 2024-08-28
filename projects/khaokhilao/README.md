@@ -14,4 +14,14 @@
 - End-to-End Testing - e2e testing
     - selenium, Cypress, Playwright, TestCafe
 
+# Setting up Testing in Our App
+- Installed React Testing Library
+    - npm i -D @testing-library/react
+- Installed jest
+    - Npm i -D jest
+- Installed Babel Dependency
+    - npm install --save-dev babel-jest @babel/core @babel/preset-env
+- Configure Babel 
+- Configure Parcel Config file to disable babel transpilation
+- 
 

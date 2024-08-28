@@ -27397,48 +27397,45 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _constant = require("../utils/constant");
-var _mockData = require("../utils/mockData");
-var _mockDataDefault = parcelHelpers.interopDefault(_mockData);
 var _reactRouterDom = require("react-router-dom");
-// import RestaurentCard from "./RestaurentCard";
 var _useOnlineStatus = require("../utils/useOnlineStatus");
 var _useOnlineStatusDefault = parcelHelpers.interopDefault(_useOnlineStatus);
 var _userContext = require("../utils/UserContext");
 var _userContextDefault = parcelHelpers.interopDefault(_userContext);
 var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
-//header
+// Header Component
 const Header = ()=>{
     _s();
     const { logedInUser } = (0, _react.useContext)((0, _userContextDefault.default));
-    //Selector
+    // Selector
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    const list = "px-4 hover:text-green-600";
-    // console.log("rendered header");
+    const list = "px-4 py-2 hover:text-green-600";
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
     const [btnName, setbtnName] = (0, _react.useState)("Login");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "items-center header flex justify-between shadow-xl",
+        className: "header flex flex-col md:flex-row items-center justify-between p-4 shadow-xl bg-white",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-20 logo-container",
+                className: "logo-container w-full md:w-20 flex justify-center md:justify-start",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "ml-4 logo",
-                    src: (0, _constant.LOGO_IMAGE)
+                    className: "logo h-16 w-16 md:h-20 md:w-20",
+                    src: (0, _constant.LOGO_IMAGE),
+                    alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/Components/Header.js",
-                    lineNumber: 26,
-                    columnNumber: 11
+                    lineNumber: 22,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.js",
-                lineNumber: 25,
-                columnNumber: 9
+                lineNumber: 21,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-item ",
+                className: "nav-item mt-4 md:mt-0 w-full md:w-auto flex justify-center md:justify-end",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    className: "font-bold text-lg p-4 m-4 flex",
+                    className: "font-bold text-lg flex flex-col md:flex-row items-center",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: list,
@@ -27448,8 +27445,8 @@ const Header = ()=>{
                             ]
                         }, void 0, true, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 34,
-                            columnNumber: 13
+                            lineNumber: 27,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: list,
@@ -27459,13 +27456,13 @@ const Header = ()=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/Components/Header.js",
-                                lineNumber: 35,
-                                columnNumber: 34
+                                lineNumber: 31,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 35,
-                            columnNumber: 13
+                            lineNumber: 30,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: list,
@@ -27475,13 +27472,13 @@ const Header = ()=>{
                                 children: "About"
                             }, void 0, false, {
                                 fileName: "src/Components/Header.js",
-                                lineNumber: 36,
-                                columnNumber: 34
+                                lineNumber: 34,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 36,
-                            columnNumber: 13
+                            lineNumber: 33,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: list,
@@ -27492,12 +27489,12 @@ const Header = ()=>{
                             }, void 0, false, {
                                 fileName: "src/Components/Header.js",
                                 lineNumber: 37,
-                                columnNumber: 35
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 37,
-                            columnNumber: 13
+                            lineNumber: 36,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: list,
@@ -27507,61 +27504,62 @@ const Header = ()=>{
                                 children: [
                                     "Cart",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "bg-green-600 ml-2 p-1  rounded-xl text-white",
+                                        className: "ml-1 p-1 rounded-xl text-green-600",
                                         children: cartItems.length
                                     }, void 0, false, {
                                         fileName: "src/Components/Header.js",
-                                        lineNumber: 40,
-                                        columnNumber: 13
+                                        lineNumber: 41,
+                                        columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/Header.js",
-                                lineNumber: 39,
-                                columnNumber: 35
+                                lineNumber: 40,
+                                columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
                             lineNumber: 39,
-                            columnNumber: 13
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "px-4 py-2 bg-green-600 text-white rounded-md mt-2 md:mt-0 md:ml-4 transition duration-300 hover:bg-blue-700",
                             onClick: ()=>{
                                 btnName === "Login" ? setbtnName("Logout") : setbtnName("Login");
                             },
                             children: btnName
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 41,
-                            columnNumber: 13
+                            lineNumber: 44,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: list,
+                            className: `${list} mt-2 md:mt-0`,
                             children: logedInUser
                         }, void 0, false, {
                             fileName: "src/Components/Header.js",
-                            lineNumber: 47,
-                            columnNumber: 16
+                            lineNumber: 52,
+                            columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/Header.js",
-                    lineNumber: 33,
-                    columnNumber: 11
+                    lineNumber: 26,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Header.js",
-                lineNumber: 32,
-                columnNumber: 9
+                lineNumber: 25,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Header.js",
-        lineNumber: 24,
-        columnNumber: 7
+        lineNumber: 20,
+        columnNumber: 5
     }, undefined);
 };
-_s(Header, "idNJZf+lJm6ofdKQ6VZuGD4u+Xc=", false, function() {
+_s(Header, "n2YDVNPu4SLD/AjJSQ7zNfn44CI=", false, function() {
     return [
         (0, _reactRedux.useSelector),
         (0, _useOnlineStatusDefault.default)
@@ -27577,7 +27575,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constant":"6mqGZ","../utils/mockData":"iOpE9","react-router-dom":"9xmpe","../utils/useOnlineStatus":"181Ji","../utils/UserContext":"c5vgB","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"6mqGZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constant":"6mqGZ","react-router-dom":"9xmpe","../utils/useOnlineStatus":"181Ji","../utils/UserContext":"c5vgB","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"6mqGZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_LINK", ()=>CDN_LINK);
@@ -27627,1505 +27625,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"iOpE9":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const restObj = [
-    {
-        "info": {
-            "id": "489129",
-            "name": "Chinese Wok",
-            "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
-            "locality": "Anand Nagar",
-            "areaName": "Marathahalli",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
-                "Chinese",
-                "Asian",
-                "Tibetan",
-                "Desserts"
-            ],
-            "avgRating": 4.2,
-            "parentId": "61955",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 22,
-                "lastMileTravel": 1.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "1.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 02:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B9199"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/chinese-wok-anand-nagar-marathahalli-bangalore-489129",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "722329",
-            "name": "Pizza Hut",
-            "cloudinaryImageId": "490629b70f89da8a5b93fc199ece335e",
-            "locality": "Hoodi",
-            "areaName": "Marathahalli",
-            "costForTwo": "\u20B9350 for two",
-            "cuisines": [
-                "Pizzas"
-            ],
-            "avgRating": 4.2,
-            "parentId": "721",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "500+",
-            "sla": {
-                "deliveryTime": 36,
-                "lastMileTravel": 3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "3.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-25 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9100"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/pizza-hut-hoodi-marathahalli-bangalore-722329",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "660362",
-            "name": "Wow! Momo",
-            "cloudinaryImageId": "64fd45fd9f44c1737bc446e470bed666",
-            "locality": "Prestige Technostar",
-            "areaName": "Doddanakundi Industrial Area-2",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
-                "Tibetan",
-                "Healthy Food",
-                "Asian",
-                "Chinese",
-                "Snacks",
-                "Continental",
-                "Desserts",
-                "Beverages"
-            ],
-            "avgRating": 4.3,
-            "parentId": "1776",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 21,
-                "lastMileTravel": 1.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "1.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-25 21:30:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B999"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/wow-momo-prestige-technostar-doddanakundi-industrial-area-2-bangalore-660362",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "600203",
-            "name": "KFC",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/6267ecd0-c240-4ef8-8050-527a15356426_600203.JPG",
-            "locality": "Bagmane Constellation Business Park",
-            "areaName": "Mahadevpura",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "Burgers",
-                "Fast Food",
-                "Rolls & Wraps"
-            ],
-            "avgRating": 4,
-            "parentId": "547",
-            "avgRatingString": "4.0",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 32,
-                "lastMileTravel": 2.9,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "2.9 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-25 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "40% OFF",
-                "subHeader": "UPTO \u20B980"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/kfc-bagmane-constellation-business-park-mahadevpura-bangalore-600203",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "352796",
-            "name": "Grameen Kulfi",
-            "cloudinaryImageId": "z8ugqbgldizxu8ol6dh5",
-            "locality": "Marathahalli",
-            "areaName": "Chinnappanhalli",
-            "costForTwo": "\u20B9120 for two",
-            "cuisines": [
-                "Ice Cream",
-                "Desserts"
-            ],
-            "avgRating": 4.8,
-            "veg": true,
-            "parentId": "12175",
-            "avgRatingString": "4.8",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 19,
-                "lastMileTravel": 0.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-20 mins",
-                "lastMileTravelString": "0.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 02:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9100"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/grameen-kulfi-marathahalli-chinnappanhalli-bangalore-352796",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "686214",
-            "name": "MOJO Pizza - 2X Toppings",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/19/d90c8be6-d0e9-4930-9057-7fda0485b06c_686214.JPG",
-            "locality": "Brookefield",
-            "areaName": "Kundalhalli",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
-                "Pizzas",
-                "Italian",
-                "Fast Food",
-                "Desserts"
-            ],
-            "avgRating": 4.4,
-            "parentId": "11329",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 35,
-                "lastMileTravel": 2.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25-35 mins",
-                "lastMileTravelString": "2.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 02:00:00",
-                "opened": true
-            },
-            "badges": {
-                "textExtendedBadges": [
-                    {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "options available",
-                        "fontColor": "#7E808C"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B9169"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/mojo-pizza-2x-toppings-brookefield-kundalhalli-bangalore-686214",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "489235",
-            "name": "Big Bowl",
-            "cloudinaryImageId": "c99751d54e4e1847186c62b3309c1327",
-            "locality": "Anand Nagar",
-            "areaName": "Marathahalli",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
-                "North Indian",
-                "Chinese",
-                "Tibetan",
-                "Desserts"
-            ],
-            "avgRating": 4.2,
-            "parentId": "434792",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "500+",
-            "sla": {
-                "deliveryTime": 23,
-                "lastMileTravel": 1.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "1.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 02:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B9199"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/big-bowl-anand-nagar-marathahalli-bangalore-489235",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "648195",
-            "name": "Subway",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/9/e0ab56c3-3d8e-4214-8705-240795d737c0_648195.jpg",
-            "locality": "Bagmane Constellation Business Park",
-            "areaName": "Mahadevpura",
-            "costForTwo": "\u20B9350 for two",
-            "cuisines": [
-                "Salads",
-                "Snacks",
-                "Desserts",
-                "Beverages"
-            ],
-            "avgRating": 4.1,
-            "parentId": "2",
-            "avgRatingString": "4.1",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 27,
-                "lastMileTravel": 2.2,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25-30 mins",
-                "lastMileTravelString": "2.2 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-25 23:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "Rxawards/_CATEGORY-Sandwiches.png",
-                        "description": "Delivery!"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-Sandwiches.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B9149"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/subway-bagmane-constellation-business-park-mahadevpura-bangalore-648195",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "657421",
-            "name": "McDonald's",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/1/5995ade4-a870-410c-bf09-dadd96ce3ad3_657421.jpg",
-            "locality": "Doddanekundi",
-            "areaName": "Marathahalli",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "Burgers",
-                "Beverages",
-                "Cafe",
-                "Desserts"
-            ],
-            "avgRating": 4.4,
-            "parentId": "630",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 19,
-                "lastMileTravel": 1.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-20 mins",
-                "lastMileTravelString": "1.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 04:45:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "Rxawards/_CATEGORY-Burger.png",
-                        "description": "Delivery!"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-Burger.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "40% OFF",
-                "subHeader": "UPTO \u20B980"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/mcdonalds-doddanekundi-marathahalli-bangalore-657421",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "445762",
-            "name": "Burger King",
-            "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
-            "locality": "Kote MR Plaza",
-            "areaName": "Sanjay Nagar",
-            "costForTwo": "\u20B9350 for two",
-            "cuisines": [
-                "Burgers",
-                "American"
-            ],
-            "avgRating": 4.3,
-            "parentId": "166",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 34,
-                "lastMileTravel": 4.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "4.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 04:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "Rxawards/_CATEGORY-Burger.png",
-                        "description": "Delivery!"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-Burger.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9100"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/burger-king-kote-mr-plaza-sanjay-nagar-bangalore-445762",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "349072",
-            "name": "Baskin Robbins - Ice Cream Desserts",
-            "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
-            "locality": "Kundanahalli, Brookefield",
-            "areaName": "Marathahalli",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
-                "Desserts",
-                "Ice Cream"
-            ],
-            "avgRating": 4.6,
-            "veg": true,
-            "parentId": "5588",
-            "avgRatingString": "4.6",
-            "totalRatingsString": "1K+",
-            "sla": {
-                "deliveryTime": 21,
-                "lastMileTravel": 2.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "2.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 04:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9100"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/baskin-robbins-ice-cream-desserts-kundanahalli-brookefield-marathahalli-bangalore-349072",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "89710",
-            "name": "NIC Ice Creams",
-            "cloudinaryImageId": "18d8b8fb6bac8063a6fa886e20148110",
-            "locality": "Marathahalli",
-            "areaName": "Chinnappanhalli",
-            "costForTwo": "\u20B9120 for two",
-            "cuisines": [
-                "Ice Cream",
-                "Desserts"
-            ],
-            "avgRating": 4.6,
-            "veg": true,
-            "parentId": "6249",
-            "avgRatingString": "4.6",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 14,
-                "lastMileTravel": 0.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "10-15 mins",
-                "lastMileTravelString": "0.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 02:00:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ],
-                "textExtendedBadges": [
-                    {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "brand",
-                        "fontColor": "#7E808C"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "brand"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT \u20B9169"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/nic-ice-creams-marathahalli-chinnappanhalli-bangalore-89710",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "113317",
-            "name": "Bakingo",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/24/a96b7994-f501-41ce-961d-801e3198cde1_113317.JPG",
-            "locality": "Brookefield",
-            "areaName": "Bengaluru Urban",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
-                "Bakery",
-                "Desserts",
-                "Beverages",
-                "Snacks"
-            ],
-            "avgRating": 4.4,
-            "parentId": "3818",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 35,
-                "lastMileTravel": 4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "4.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 01:00:00",
-                "opened": true
-            },
-            "badges": {
-                "textExtendedBadges": [
-                    {
-                        "iconId": "v1705582451/Ratnesh_Badges/Perfect_cake.png",
-                        "shortDescription": "Perfect cake delivery",
-                        "fontColor": "#7E808C"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "v1705582451/Ratnesh_Badges/Perfect_cake.png",
-                                    "shortDescription": "Perfect cake delivery"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9100"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/bakingo-brookefield-bengaluru-urban-bangalore-113317",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "707532",
-            "name": "Domino's Pizza",
-            "cloudinaryImageId": "d0450ce1a6ba19ea60cd724471ed54a8",
-            "locality": "Chinnapahalli",
-            "areaName": "Bagmane Solarium",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "Pizzas",
-                "Italian",
-                "Pastas",
-                "Desserts"
-            ],
-            "avgRating": 4.3,
-            "parentId": "2456",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 25,
-                "lastMileTravel": 0.6,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "0.6 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-25 22:59:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "Rxawards/_CATEGORY-Pizza.png",
-                        "description": "Delivery!"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "Delivery!",
-                                    "imageId": "Rxawards/_CATEGORY-Pizza.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "\u20B9150 OFF",
-                "subHeader": "ABOVE \u20B9299",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/dominos-pizza-chinnapahalli-bagmane-solarium-bangalore-707532",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "27767",
-            "name": "Biriyani Zone",
-            "cloudinaryImageId": "y4lnpb4qysq3yqm4s1q4",
-            "locality": "Marathahalli",
-            "areaName": "Whitefield",
-            "costForTwo": "\u20B9600 for two",
-            "cuisines": [
-                "Biryani",
-                "Andhra",
-                "South Indian",
-                "Tandoor"
-            ],
-            "avgRating": 4.2,
-            "parentId": "2644",
-            "avgRatingString": "4.2",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 36,
-                "lastMileTravel": 4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "4.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-25 23:00:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "20% OFF",
-                "subHeader": "UPTO \u20B950"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/biriyani-zone-marathahalli-whitefield-bangalore-27767",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "31192",
-            "name": "Sri Udupi Park - Opp Bescom",
-            "cloudinaryImageId": "qhiy6coolxjequzdstn0",
-            "locality": "Phoenix Marketcity Mall",
-            "areaName": "Mahadevapura",
-            "costForTwo": "\u20B9200 for two",
-            "cuisines": [
-                "South Indian",
-                "Jain",
-                "Chinese",
-                "Desserts"
-            ],
-            "avgRating": 4.3,
-            "veg": true,
-            "parentId": "381856",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 33,
-                "lastMileTravel": 4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "4.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-25 23:30:00",
-                "opened": true
-            },
-            "badges": {
-                "imageBadges": [
-                    {
-                        "imageId": "v1695133679/badges/Pure_Veg111.png",
-                        "description": "pureveg"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "pureveg",
-                                    "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "10% OFF",
-                "subHeader": "UPTO \u20B940"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/sri-udupi-park-opp-bescom-phoenix-marketcity-mall-mahadevapura-bangalore-31192",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "789542",
-            "name": "Great Indian Khichdi by EatFit",
-            "cloudinaryImageId": "349833c8c4d6d7715249e740efc80721",
-            "locality": "AECS layout",
-            "areaName": "Brookfield",
-            "costForTwo": "\u20B9200 for two",
-            "cuisines": [
-                "Home Food",
-                "Indian",
-                "Healthy Food",
-                "Snacks",
-                "Desserts",
-                "Rajasthani",
-                "South Indian",
-                "Maharashtrian",
-                "Sweets"
-            ],
-            "avgRating": 4.4,
-            "veg": true,
-            "parentId": "319582",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 34,
-                "lastMileTravel": 2.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "2.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 01:00:00",
-                "opened": true
-            },
-            "badges": {
-                "textExtendedBadges": [
-                    {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "brand",
-                        "fontColor": "#7E808C"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "brand"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "60% OFF",
-                "subHeader": "UPTO \u20B9120"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/great-indian-khichdi-by-eatfit-aecs-layout-brookfield-bangalore-789542",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "672885",
-            "name": "NH1 Bowls - Highway To North",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/20/f59b5c08-1812-4492-80c5-734a02ed7b0e_672885.JPG",
-            "locality": "Brookefield",
-            "areaName": "Kundalhalli",
-            "costForTwo": "\u20B9250 for two",
-            "cuisines": [
-                "North Indian",
-                "Punjabi",
-                "Home Food"
-            ],
-            "avgRating": 4.4,
-            "parentId": "22452",
-            "avgRatingString": "4.4",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 25,
-                "lastMileTravel": 2.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-25 mins",
-                "lastMileTravelString": "2.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 02:00:00",
-                "opened": true
-            },
-            "badges": {
-                "textExtendedBadges": [
-                    {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "options available",
-                        "fontColor": "#7E808C"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "50% OFF",
-                "subHeader": "UPTO \u20B9100"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/nh1-bowls-highway-to-north-brookefield-kundalhalli-bangalore-672885",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "750449",
-            "name": "Daily Kitchen - Homely Meals",
-            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/19/8a1d8aae-63c3-4033-a8b4-5d0eac490c8f_750449.JPG",
-            "locality": "AECS Layout",
-            "areaName": "Brookefield",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "Home Food",
-                "Indian",
-                "North Indian",
-                "Thalis"
-            ],
-            "avgRating": 4.3,
-            "parentId": "444382",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "100+",
-            "sla": {
-                "deliveryTime": 20,
-                "lastMileTravel": 2.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "10-20 mins",
-                "lastMileTravelString": "2.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 02:00:00",
-                "opened": true
-            },
-            "badges": {
-                "textExtendedBadges": [
-                    {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "options available",
-                        "fontColor": "#7E808C"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "\u20B9125 OFF",
-                "subHeader": "ABOVE \u20B9299",
-                "discountTag": "FLAT DEAL"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/daily-kitchen-homely-meals-aecs-layout-brookefield-bangalore-750449",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "78138",
-            "name": "Imperio Restaurant",
-            "cloudinaryImageId": "a1629b9c7f59577a55411e94425c6d99",
-            "locality": "Brookefields",
-            "areaName": "Brookefield",
-            "costForTwo": "\u20B9300 for two",
-            "cuisines": [
-                "Biryani",
-                "Kebabs",
-                "South Indian",
-                "Tandoor",
-                "Beverages",
-                "North Indian",
-                "Ice Cream",
-                "Desserts"
-            ],
-            "avgRating": 4.1,
-            "parentId": "5610",
-            "avgRatingString": "4.1",
-            "totalRatingsString": "10K+",
-            "sla": {
-                "deliveryTime": 35,
-                "lastMileTravel": 3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "35-40 mins",
-                "lastMileTravelString": "3.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2024-05-26 05:00:00",
-                "opened": true
-            },
-            "badges": {
-                "textExtendedBadges": [
-                    {
-                        "iconId": "guiltfree/GF_Logo_android_3x",
-                        "shortDescription": "options available",
-                        "fontColor": "#7E808C"
-                    }
-                ]
-            },
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {
-                        "badgeObject": [
-                            {
-                                "attributes": {
-                                    "description": "",
-                                    "fontColor": "#7E808C",
-                                    "iconId": "guiltfree/GF_Logo_android_3x",
-                                    "shortDescription": "options available"
-                                }
-                            }
-                        ]
-                    }
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "40% OFF",
-                "subHeader": "UPTO \u20B980"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/imperio-restaurant-s-brookefield-bangalore-78138",
-            "type": "WEBLINK"
-        }
-    }
-];
-exports.default = restObj;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"16tBa"}],"9xmpe":[function(require,module,exports) {
+},{}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.24.1
  *
@@ -37713,9 +36213,11 @@ const RestaurentCard = ({ resData })=>{
     const avgratinglook1 = "bg-orange-600 text-xs text-white p-1 m-1 mr-3 border rounded-md";
     const { name, avgRating, locality, areaName, costForTwo, sla } = resData?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "rest-cards p-3 m-4 w-[250px] h-[350px] border rounded-md shadow-2xl ",
+        className: `  rest-cards hover:bg-green-600 transform hover:scale-110 transition duration-300
+       ease-in-out p-3 m-4 w-[250px] h-[350px] border rounded-md shadow-2xl`,
         style: {
-            backgroundColor: "white"
+            backgroundColor: "white",
+            hover: "bg-grren-600"
         },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -37724,7 +36226,7 @@ const RestaurentCard = ({ resData })=>{
                 alt: "rest-logo"
             }, void 0, false, {
                 fileName: "src/Components/RestaurentCard.js",
-                lineNumber: 18,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37735,7 +36237,7 @@ const RestaurentCard = ({ resData })=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/Components/RestaurentCard.js",
-                        lineNumber: 23,
+                        lineNumber: 25,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -37748,7 +36250,7 @@ const RestaurentCard = ({ resData })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/RestaurentCard.js",
-                        lineNumber: 25,
+                        lineNumber: 27,
                         columnNumber: 13
                     }, undefined),
                     " ",
@@ -37756,14 +36258,14 @@ const RestaurentCard = ({ resData })=>{
                         children: sla?.slaString
                     }, void 0, false, {
                         fileName: "src/Components/RestaurentCard.js",
-                        lineNumber: 25,
+                        lineNumber: 27,
                         columnNumber: 75
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: ""
                     }, void 0, false, {
                         fileName: "src/Components/RestaurentCard.js",
-                        lineNumber: 27,
+                        lineNumber: 29,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37775,25 +36277,25 @@ const RestaurentCard = ({ resData })=>{
                                 children: costForTwo
                             }, void 0, false, {
                                 fileName: "src/Components/RestaurentCard.js",
-                                lineNumber: 28,
+                                lineNumber: 30,
                                 columnNumber: 37
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/RestaurentCard.js",
-                        lineNumber: 28,
+                        lineNumber: 30,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/RestaurentCard.js",
-                lineNumber: 22,
+                lineNumber: 24,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/RestaurentCard.js",
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 7
     }, undefined);
 };
@@ -37808,20 +36310,20 @@ const withPromotedLabel = (RestaurentCard)=>{
                     children: "Promoted"
                 }, void 0, false, {
                     fileName: "src/Components/RestaurentCard.js",
-                    lineNumber: 40,
+                    lineNumber: 42,
                     columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurentCard, {
                     ...props
                 }, void 0, false, {
                     fileName: "src/Components/RestaurentCard.js",
-                    lineNumber: 42,
+                    lineNumber: 44,
                     columnNumber: 11
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/Components/RestaurentCard.js",
-            lineNumber: 39,
+            lineNumber: 41,
             columnNumber: 9
         }, undefined);
     };
@@ -37835,7 +36337,7 @@ $RefreshReg$(_c, "RestaurentCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","react":"21dqq","../utils/UserContext":"c5vgB","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"clIT3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0","../utils/UserContext":"c5vgB"}],"clIT3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FontAwesomeIcon", ()=>FontAwesomeIcon);
@@ -63637,47 +62139,41 @@ const Footer = ()=>{
         columnNumber: 23
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex",
+        className: "flex flex-col sm:flex-row justify-center items-center text-center p-4 bg-gray-100",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "px-1",
-                children: " Created By"
+                children: "Created By"
             }, void 0, false, {
-                fileName: "src/Components/Footer.js",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-red-700 pl-1",
-                children: [
-                    " ",
-                    heart
-                ]
-            }, void 0, true, {
                 fileName: "src/Components/Footer.js",
                 lineNumber: 10,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                className: "px-1",
-                href: "https://www.linkedin.com/in/pinkijha/",
-                target: "_blank",
-                children: " Pinki Jha "
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-red-700 pl-1",
+                children: heart
             }, void 0, false, {
                 fileName: "src/Components/Footer.js",
                 lineNumber: 11,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                className: "px-1 text-gray-700",
-                children: [
-                    " ",
-                    copyWrite,
-                    " "
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                className: "px-1 text-blue-600 hover:text-blue-800",
+                href: "https://www.linkedin.com/in/pinkijha/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: "Pinki Jha"
+            }, void 0, false, {
                 fileName: "src/Components/Footer.js",
                 lineNumber: 12,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "px-1 text-gray-700",
+                children: copyWrite
+            }, void 0, false, {
+                fileName: "src/Components/Footer.js",
+                lineNumber: 20,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -63685,21 +62181,21 @@ const Footer = ()=>{
                 children: "2024"
             }, void 0, false, {
                 fileName: "src/Components/Footer.js",
-                lineNumber: 13,
+                lineNumber: 21,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 className: "px-1",
-                children: " KhaoKhilao"
+                children: "KhaoKhilao"
             }, void 0, false, {
                 fileName: "src/Components/Footer.js",
-                lineNumber: 14,
+                lineNumber: 22,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Footer.js",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
@@ -64019,173 +62515,178 @@ const RestaurentsMenu = ()=>{
     // Custom hooks
     const restaurentInfo = (0, _useRestaurentsMenuDefault.default)(resId);
     const [showIndex, setshowIndex] = (0, _react.useState)(false);
-    // fonta-wesome
-    const element = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+    // FontAwesome icons
+    const starIcon = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
         icon: (0, _freeSolidSvgIcons.faStar)
     }, void 0, false, {
         fileName: "src/Components/RestaurentsMenu.js",
-        lineNumber: 21,
-        columnNumber: 21
+        lineNumber: 19,
+        columnNumber: 22
     }, undefined);
-    // shimmer UI
+    const locationIcon = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+        icon: (0, _freeSolidSvgIcons.faLocationDot)
+    }, void 0, false, {
+        fileName: "src/Components/RestaurentsMenu.js",
+        lineNumber: 20,
+        columnNumber: 26
+    }, undefined);
+    // Shimmer UI for loading state
     if (restaurentInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerRestoMenuDefault.default), {}, void 0, false, {
         fileName: "src/Components/RestaurentsMenu.js",
-        lineNumber: 26,
-        columnNumber: 42
+        lineNumber: 23,
+        columnNumber: 41
     }, undefined);
-    // defined names from api 
+    // Destructuring data from API
     const { name, cloudinaryImageId, avgRating, city, totalRatingsString, costForTwoMessage, cuisines, sla } = restaurentInfo?.cards?.[2]?.card?.card?.info;
-    const { itemCards } = restaurentInfo?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]?.card?.card || {};
-    // console.log("itemcards", itemCards);
-    // console.log(restaurentInfo?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR.cards);
     const categories = restaurentInfo?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter((c)=>c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
-    //  console.log(categories);
-    // if( restaurentInfo === 0 ) return <ShimmerRestoMenu />
-    const menuSpan = "ml-[5px]";
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restoMenuContainer ",
+        className: "restoMenuContainer p-4 lg:p-8",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "resto-menu lg:ml-[380px]  sm:ml-[500px]  flex mt-[30px] mr-[5px] h-[250px] w-2/4   rounded-lg shadow-lg",
+                className: "resto-menu flex flex-col lg:flex-row lg:ml-[380px] sm:ml-[500px] mt-[30px] mr-[5px] h-auto lg:h-[250px] w-full lg:w-2/4 rounded-lg shadow-lg",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "menuImg ml-[20px] mt-[15px] mr-[5px] cursor-pointer   p-[1px] h-[200px] w-[200px] rounded-lg",
-                        src: (0, _constant.CDN_LINK) + cloudinaryImageId
+                        className: "menuImg mx-auto lg:mx-0 mt-[15px] cursor-pointer p-[1px] h-[200px] w-[200px] lg:h-auto lg:w-auto rounded-lg",
+                        src: (0, _constant.CDN_LINK) + cloudinaryImageId,
+                        alt: "Restaurant"
                     }, void 0, false, {
                         fileName: "src/Components/RestaurentsMenu.js",
-                        lineNumber: 50,
-                        columnNumber: 9
+                        lineNumber: 36,
+                        columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "resto-menu-cards  pt[10px] pl-[10px]",
+                        className: "resto-menu-cards pt-4 pl-0 lg:pl-[10px]",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "mt-[12px]",
-                                children: [
-                                    " ",
-                                    name
-                                ]
-                            }, void 0, true, {
+                                className: "mt-[12px] text-center lg:text-left",
+                                children: name
+                            }, void 0, false, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 54,
-                                columnNumber: 17
+                                lineNumber: 42,
+                                columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                className: "rating mt[2px] font-bold",
+                                className: "rating mt-[2px] font-bold text-center lg:text-left",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "ratingStar   text-orange-700",
-                                        children: [
-                                            element,
-                                            " "
-                                        ]
-                                    }, void 0, true, {
+                                        className: "ratingStar text-orange-700",
+                                        children: starIcon
+                                    }, void 0, false, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 55,
-                                        columnNumber: 58
+                                        lineNumber: 44,
+                                        columnNumber: 25
                                     }, undefined),
+                                    " ",
                                     avgRating,
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: menuSpan,
+                                        className: "ml-[5px]",
                                         children: [
-                                            "( ",
+                                            "(",
                                             totalRatingsString,
-                                            " )"
+                                            ")"
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 57,
-                                        columnNumber: 21
+                                        lineNumber: 45,
+                                        columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: menuSpan,
+                                        className: "ml-[5px]",
                                         children: costForTwoMessage
                                     }, void 0, false, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 58,
-                                        columnNumber: 21
+                                        lineNumber: 46,
+                                        columnNumber: 25
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 55,
-                                columnNumber: 17
+                                lineNumber: 43,
+                                columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
-                                className: "cuisines",
-                                children: cuisines.join(" , ")
+                                className: "cuisines text-center lg:text-left",
+                                children: cuisines.join(", ")
                             }, void 0, false, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 60,
-                                columnNumber: 17
+                                lineNumber: 48,
+                                columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                className: menuSpan,
+                                className: "text-center lg:text-left",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
                                         icon: (0, _freeSolidSvgIcons.faLocationDot)
                                     }, void 0, false, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 61,
-                                        columnNumber: 42
+                                        lineNumber: 50,
+                                        columnNumber: 25
                                     }, undefined),
                                     " ",
                                     city
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 61,
-                                columnNumber: 17
+                                lineNumber: 49,
+                                columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                className: "deliveryTime",
+                                className: "deliveryTime text-center lg:text-left",
                                 children: [
                                     sla?.lastMileTravelString,
+                                    " ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: menuSpan,
+                                        className: "ml-[5px]",
                                         children: "|"
                                     }, void 0, false, {
                                         fileName: "src/Components/RestaurentsMenu.js",
-                                        lineNumber: 63,
-                                        columnNumber: 18
+                                        lineNumber: 53,
+                                        columnNumber: 53
                                     }, undefined),
                                     " ",
                                     sla?.slaString
                                 ]
                             }, void 0, true, {
                                 fileName: "src/Components/RestaurentsMenu.js",
-                                lineNumber: 62,
-                                columnNumber: 17
+                                lineNumber: 52,
+                                columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/RestaurentsMenu.js",
-                        lineNumber: 53,
-                        columnNumber: 12
+                        lineNumber: 41,
+                        columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/RestaurentsMenu.js",
-                lineNumber: 48,
-                columnNumber: 9
+                lineNumber: 35,
+                columnNumber: 13
             }, undefined),
-            categories?.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentCategoriesDefault.default), {
-                    data: category?.card?.card,
-                    showItem: index === showIndex ? true : false,
-                    setshowIndex: ()=>setshowIndex(index)
-                }, category?.card?.card?.data?.title, false, {
-                    fileName: "src/Components/RestaurentsMenu.js",
-                    lineNumber: 72,
-                    columnNumber: 17
-                }, undefined))
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mt-8",
+                children: categories?.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentCategoriesDefault.default), {
+                        data: category?.card?.card,
+                        showItem: index === showIndex,
+                        setshowIndex: ()=>setshowIndex(index)
+                    }, category?.card?.card?.data?.title, false, {
+                        fileName: "src/Components/RestaurentsMenu.js",
+                        lineNumber: 61,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/RestaurentsMenu.js",
+                lineNumber: 59,
+                columnNumber: 13
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/RestaurentsMenu.js",
-        lineNumber: 47,
+        lineNumber: 34,
         columnNumber: 9
     }, undefined);
 };
-_s(RestaurentsMenu, "dEG9X/xTM/QLr87cK83wJh7oH1c=", false, function() {
+_s(RestaurentsMenu, "+X4orOWfxg7BIrIwiP1h2QNBimc=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _useRestaurentsMenuDefault.default)

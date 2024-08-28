@@ -1,56 +1,61 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { LOGO_IMAGE } from "../utils/constant";
-import restObj from "../utils/mockData";
 import { Link } from "react-router-dom";
-// import RestaurentCard from "./RestaurentCard";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 
+// Header Component
+const Header = () => {
+  const { logedInUser } = useContext(UserContext);
 
-//header
- const Header = () => {
+  // Selector
+  const cartItems = useSelector((store) => store.cart.items);
 
-  const {logedInUser} = useContext(UserContext);
-
-  //Selector
-  const cartItems = useSelector((store)=>store.cart.items)
- 
-  const list = "px-4 hover:text-green-600";
-  // console.log("rendered header");
-   const onlineStatus = useOnlineStatus();
+  const list = "px-4 py-2 hover:text-green-600";
+  const onlineStatus = useOnlineStatus();
   const [btnName, setbtnName] = useState("Login");
-    return (
-      <div className="items-center header flex justify-between shadow-xl">
-        <div className="w-20 logo-container">
-          <img
-            className="ml-4 logo"
-            src={LOGO_IMAGE}
-          />
-        </div>
-       
-        <div className="nav-item ">
-          <ul className="font-bold text-lg p-4 m-4 flex">
-            <li className={list}>Online Status: {onlineStatus ? '✅' : '🔴'}</li>
-            <li className={list}><Link to="/" className="link">Home</Link></li>
-            <li className={list}><Link to="/about" className="link">About</Link></li>
-            <li className={list} ><Link to="/contact" className="link">Contact</Link></li>
-            {/* <li className={list} ><Link to="/grocery" className="link">Grocery</Link></li> */}
-            <li className={list} ><Link to="/cart" className="link">Cart 
-            <span className="bg-green-600 ml-2 p-1  rounded-xl text-white">{cartItems.length}</span></Link></li>
-            <button onClick= {() =>
-               {
-                 btnName === 'Login' ?
-                setbtnName ("Logout") :
-                setbtnName ("Login");               
-               }}>{btnName}</button>
-               <li className={list}>{logedInUser}</li>
-          </ul>
-        </div>
+
+  return (
+    <div className="header flex flex-col md:flex-row items-center justify-between p-4 shadow-xl bg-white">
+      <div className="logo-container w-full md:w-20 flex justify-center md:justify-start">
+        <img className="logo h-16 w-16 md:h-20 md:w-20" src={LOGO_IMAGE} alt="Logo" />
       </div>
-      
-    );
-    
-  };
- 
-  export default Header;
+
+      <div className="nav-item mt-4 md:mt-0 w-full md:w-auto flex justify-center md:justify-end">
+        <ul className="font-bold text-lg flex flex-col md:flex-row items-center">
+          <li className={list}>
+            Online Status: {onlineStatus ? '✅' : '🔴'}
+          </li>
+          <li className={list}>
+            <Link to="/" className="link">Home</Link>
+          </li>
+          <li className={list}>
+            <Link to="/about" className="link">About</Link>
+          </li>
+          <li className={list}>
+            <Link to="/contact" className="link">Contact</Link>
+          </li>
+          <li className={list}>
+            <Link to="/cart" className="link">Cart
+              <span className="ml-1 p-1 rounded-xl text-green-600">{cartItems.length}</span>
+            </Link>
+          </li>
+          <button 
+            className="px-4 py-2 bg-green-600 text-white rounded-md mt-2 md:mt-0 md:ml-4 transition duration-300 hover:bg-blue-700"
+            onClick={() => {
+              btnName === 'Login' ? setbtnName("Logout") : setbtnName("Login");
+            }}
+          >
+            {btnName}
+          </button>
+          <li className={`${list} mt-2 md:mt-0`}>
+            {logedInUser}
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Header;

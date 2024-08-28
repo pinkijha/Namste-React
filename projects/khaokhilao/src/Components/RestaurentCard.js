@@ -12,9 +12,11 @@ const RestaurentCard = ({resData}) => {
   const avgratinglook1 = "bg-orange-600 text-xs text-white p-1 m-1 mr-3 border rounded-md";
 
 
+
     const {name, avgRating, locality,  areaName, costForTwo, sla} = resData?.info;
     return (
-      <div className="rest-cards p-3 m-4 w-[250px] h-[350px] border rounded-md shadow-2xl " style={{ backgroundColor: "white" }}>
+      <div  className={`  rest-cards hover:bg-green-600 transform hover:scale-110 transition duration-300
+       ease-in-out p-3 m-4 w-[250px] h-[350px] border rounded-md shadow-2xl`}  style={{ backgroundColor: "white", hover:'bg-grren-600' }}>
         <img
           className="rest-img w-[260px] h-[200px] border rounded-lg  "
           src={CDN_LINK + resData.info.cloudinaryImageId} alt="rest-logo"
