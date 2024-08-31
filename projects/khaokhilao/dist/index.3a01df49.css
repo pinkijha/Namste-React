@@ -80,4 +80,49 @@
   margin-top: 20px;
   margin-left: 15px;
 }
+
+.contact {
+  margin: 50px 0 10px 250px;
+  display: flex;
+}
+
+.contact-heading {
+  margin: 0 0 10px 150px;
+}
+
+.contact-card {
+  border: 1px solid #ebf1fd;
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  box-shadow: 0 4px 8px #f7a72533, 0 6px 20px #00000030;
+}
+
+.contact-img {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 500px;
+  height: 540px;
+}
+
+.contact-form input, textarea {
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+
+.submit-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+}
 /*# sourceMappingURL=index.3a01df49.css.map */

@@ -62220,274 +62220,129 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../utils/constant");
-var _contactForm = require("./ContactForm");
-var _contactFormDefault = parcelHelpers.interopDefault(_contactForm);
-var _contactFormClass = require("./ContactFormClass");
-var _contactFormClassDefault = parcelHelpers.interopDefault(_contactFormClass);
+// import ContactForm from "./ContactForm";
+// import ContactFormClass from "./ContactFormClass";
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _userContext = require("../utils/UserContext");
-var _userContextDefault = parcelHelpers.interopDefault(_userContext);
-class Contact extends (0, _reactDefault.default).Component {
-    constructor(){
-        super();
-    }
-    componentDidMount() {}
-    render() {
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "contact",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "contact-img",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "contact-img",
-                        src: (0, _constant.CONTACT_IMAGE)
+// import UserContext from "../utils/UserContext";
+const Contact = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "contact flex flex-col items-center lg:flex-row lg:items-start p-4",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "contact-img w-full lg:w-1/2 flex justify-center mb-4 lg:mb-0",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "w-full max-w-md h-auto rounded-lg shadow-lg",
+                    src: (0, _constant.CONTACT_IMAGE),
+                    alt: "Contact"
+                }, void 0, false, {
+                    fileName: "src/Components/Contact.js",
+                    lineNumber: 12,
+                    columnNumber: 23
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Contact.js",
+                lineNumber: 11,
+                columnNumber: 19
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "contact-heading text-lg font-bold",
+                        children: "Contact Us"
+                    }, void 0, false, {
+                        fileName: "src/Components/Contact.js",
+                        lineNumber: 19,
+                        columnNumber: 16
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "contact-card",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                            className: "contact-form",
+                            children: [
+                                "Full Name:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    placeholder: "enter your full name"
+                                }, void 0, false, {
+                                    fileName: "src/Components/Contact.js",
+                                    lineNumber: 23,
+                                    columnNumber: 23
+                                }, undefined),
+                                "Email:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    placeholder: "enter your email"
+                                }, void 0, false, {
+                                    fileName: "src/Components/Contact.js",
+                                    lineNumber: 25,
+                                    columnNumber: 23
+                                }, undefined),
+                                "Mobile Number:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "number",
+                                    placeholder: "enter your number"
+                                }, void 0, false, {
+                                    fileName: "src/Components/Contact.js",
+                                    lineNumber: 27,
+                                    columnNumber: 23
+                                }, undefined),
+                                "Subject:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                    name: "subject",
+                                    placeholder: "Write something..",
+                                    style: {
+                                        height: "90px"
+                                    }
+                                }, void 0, false, {
+                                    fileName: "src/Components/Contact.js",
+                                    lineNumber: 29,
+                                    columnNumber: 23
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "submit-btn",
+                                    type: "submit",
+                                    children: "Send"
+                                }, void 0, false, {
+                                    fileName: "src/Components/Contact.js",
+                                    lineNumber: 34,
+                                    columnNumber: 23
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/Contact.js",
+                            lineNumber: 21,
+                            columnNumber: 19
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Contact.js",
                         lineNumber: 20,
-                        columnNumber: 21
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/Components/Contact.js",
-                    lineNumber: 19,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContextDefault.default).Consumer, {
-                        children: ({ logedInUser })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "font-bold",
-                                children: [
-                                    "User: ",
-                                    logedInUser
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/Components/Contact.js",
-                                lineNumber: 26,
-                                columnNumber: 30
-                            }, this)
-                    }, void 0, false, {
-                        fileName: "src/Components/Contact.js",
-                        lineNumber: 24,
-                        columnNumber: 21
-                    }, this)
-                }, void 0, false, {
-                    fileName: "src/Components/Contact.js",
-                    lineNumber: 23,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactFormClassDefault.default), {}, void 0, false, {
-                    fileName: "src/Components/Contact.js",
-                    lineNumber: 30,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/Components/Contact.js",
-            lineNumber: 18,
-            columnNumber: 13
-        }, this);
-    }
-}
+                        columnNumber: 15
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Contact.js",
+                lineNumber: 18,
+                columnNumber: 19
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Contact.js",
+        lineNumber: 10,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Contact;
 exports.default = Contact;
+var _c;
+$RefreshReg$(_c, "Contact");
 
   $parcel$ReactRefreshHelpers$84fc.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","./ContactForm":"g3IfF","./ContactFormClass":"jm0bR","react":"21dqq","../utils/UserContext":"c5vgB","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"g3IfF":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9941 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9941.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _contactFormClass = require("./ContactFormClass");
-var _contactFormClassDefault = parcelHelpers.interopDefault(_contactFormClass);
-const ContactForm = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "contact-heading",
-                children: "Contact Us"
-            }, void 0, false, {
-                fileName: "src/Components/ContactForm.js",
-                lineNumber: 6,
-                columnNumber: 14
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "contact-card",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                    className: "contact-form",
-                    children: [
-                        "Full Name:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "enter your full name"
-                        }, void 0, false, {
-                            fileName: "src/Components/ContactForm.js",
-                            lineNumber: 10,
-                            columnNumber: 21
-                        }, undefined),
-                        "Email:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "email",
-                            placeholder: "enter your full email"
-                        }, void 0, false, {
-                            fileName: "src/Components/ContactForm.js",
-                            lineNumber: 12,
-                            columnNumber: 21
-                        }, undefined),
-                        "Mobile Number:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "number",
-                            placeholder: "enter your full number"
-                        }, void 0, false, {
-                            fileName: "src/Components/ContactForm.js",
-                            lineNumber: 14,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactFormClassDefault.default), {}, void 0, false, {
-                            fileName: "src/Components/ContactForm.js",
-                            lineNumber: 21,
-                            columnNumber: 22
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "submit-btn",
-                            type: "submit",
-                            children: "Send"
-                        }, void 0, false, {
-                            fileName: "src/Components/ContactForm.js",
-                            lineNumber: 22,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Components/ContactForm.js",
-                    lineNumber: 8,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/ContactForm.js",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/ContactForm.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = ContactForm;
-exports.default = ContactForm;
-var _c;
-$RefreshReg$(_c, "ContactForm");
-
-  $parcel$ReactRefreshHelpers$9941.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ContactFormClass":"jm0bR","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"jm0bR":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f9d9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f9d9.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class ContactFormClass extends (0, _reactDefault.default).Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            userInfo: {
-                name: "shailesh",
-                location: "bihar",
-                avatar_url: "https//dummy.photo"
-            }
-        };
-    //  console.log("constructor");
-    }
-    async componentDidMount() {
-        const data = await fetch("https://api.github.com/users/pinkijha");
-        const json = await data.json();
-        this.setState({
-            userInfo: json
-        });
-        console.log(json);
-        // console.log("didMount")
-        this.timer = setInterval(()=>{
-        // console.log("hello")
-        }, 1000);
-    }
-    componentDidUpdate() {
-    // console.log("did update")
-    }
-    componentWillUnmount() {
-        clearInterval(this.timer);
-    }
-    render() {
-        const { id, login, avatar_url } = this.state.userInfo;
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: [
-                            "Id: ",
-                            id
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/ContactFormClass.js",
-                        lineNumber: 45,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: [
-                            "Name: ",
-                            login
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/ContactFormClass.js",
-                        lineNumber: 46,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: avatar_url
-                    }, void 0, false, {
-                        fileName: "src/Components/ContactFormClass.js",
-                        lineNumber: 47,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/ContactFormClass.js",
-                lineNumber: 44,
-                columnNumber: 13
-            }, this)
-        }, void 0, false, {
-            fileName: "src/Components/ContactFormClass.js",
-            lineNumber: 42,
-            columnNumber: 13
-        }, this);
-    }
-}
-exports.default = ContactFormClass;
-
-  $parcel$ReactRefreshHelpers$f9d9.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"8T9iu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../utils/constant":"6mqGZ","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"16tBa","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"bjsA0"}],"8T9iu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9bf6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

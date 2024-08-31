@@ -12,13 +12,13 @@ const ContactForm = () =>{
                     <input type="email" placeholder="enter your full email"></input>
                     Mobile Number:
                     <input type="number" placeholder="enter your full number"></input>
-                    {/* Subject:
+                    Subject:
                     <textarea
                         name="subject"
                         placeholder="Write something.."
-                        style={{ height: '150px' }}
-                    /> */}                                    
-                     <ContactFormClass />
+                        style={{ height: '90px' }}
+                    />                                     
+                     {/* <ContactFormClass /> */}
                     <button className="submit-btn" type="submit">Send</button>
                 </form>
             </div>

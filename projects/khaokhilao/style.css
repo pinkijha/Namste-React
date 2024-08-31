@@ -83,3 +83,47 @@
     height: 30px;
 
 }
+
+/* contact */
+
+.contact{
+    display: flex;
+    margin: 50px 0px 10px 250px;
+}
+.contact-heading{
+    margin: 0px 0px 10px 150px;
+}
+.contact-card{
+    padding: 10px;
+    border: 1px solid #ebf1fd   ;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(247, 167, 37, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact-img{
+    height: 540px;
+    width: 500px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.contact-form input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .submit-btn{
+    background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  }
+
